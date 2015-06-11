@@ -1,0 +1,175 @@
+/* 两列右侧自适应布局 */
+.ra-lb {
+  margin: 0 0 10px;
+}
+.ra-lc {
+  position: relative;
+  float: left;
+  width: 190px;
+  margin-right: -200px;
+}
+.ra-rb {
+  float: right;
+  width: 100%;
+}
+.ra-rc {
+  margin-left: 200px;
+}
+/* 两列左侧自适应布局 */
+.la-lbb {
+  margin: 0 0 10px;
+}
+.la-rc {
+  position: relative;
+  float: right;
+  width: 230px;
+  margin-left: -230px;
+}
+.la-lb {
+  float: left;
+  width: 100%;
+}
+.la-lc {
+  margin-right: 240px;
+}
+/* 三列中间自适应布局 */
+.ma-lb {
+  margin: 0 0 10px;
+}
+.ma-lc,
+.ma-rc {
+  position: relative;
+  float: left;
+  width: 230px;
+  margin: 0 -230px 0 0;
+}
+.ma-rc {
+  float: right;
+  width: 190px;
+  margin: 0 0 0 -190px;
+}
+.ma-mb {
+  float: left;
+  width: 100%;
+}
+.ma-mc {
+  margin: 0 200px 0 240px;
+}
+/* 三列左侧自适应布局 */
+.laf-lbb {
+  margin: 0 0 10px;
+}
+.laf-rlc,
+.laf-rrc {
+  position: relative;
+  float: right;
+  width: 190px;
+}
+.laf-rlc {
+  width: 230px;
+  margin-left: 10px;
+}
+.laf-lb {
+  float: left;
+  width: 100%;
+  margin-right: -430px;
+}
+.laf-lc {
+  margin-right: 440px;
+}
+/* 三列右侧自适应布局 */
+.ral-lb {
+  margin: 0 0 10px;
+}
+.ral-llc,
+.ral-lrc {
+  position: relative;
+  float: left;
+  width: 230px;
+}
+.ral-llc {
+  width: 190px;
+  margin-right: 10px;
+}
+.ral-rb {
+  float: right;
+  width: 100%;
+  margin-left: -430px;
+}
+.ral-rc {
+  margin-left: 440px;
+}
+.border-image-1px {
+  border-width: 1px 0;
+  border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYAAABP2FU6AAAAFUlEQVQIW2NkYGD4z8jAwMAAJ/4DABE1AgNkvBCJAAAAAElFTkSuQmCC") 2 0 stretch;
+}
+/*扁平按钮css样式*/
+.btn-bianpin {
+  background: #ff0000;
+  background-image: -webkit-linear-gradient(top, #ff0000, #ff0000);
+  background-image: -moz-linear-gradient(top, #ff0000, #ff0000);
+  background-image: -ms-linear-gradient(top, #ff0000, #ff0000);
+  background-image: -o-linear-gradient(top, #ff0000, #ff0000);
+  background-image: linear-gradient(to bottom, #ff0000, #ff0000);
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 4px 4px 4px 4px;
+  border: solid #ff0000 2px;
+  text-decoration: none;
+}
+.btn-bianpin:hover {
+  background: #ff0000;
+  background-image: -webkit-linear-gradient(top, #ff0000, #ff0000);
+  background-image: -moz-linear-gradient(top, #ff0000, #ff0000);
+  background-image: -ms-linear-gradient(top, #ff0000, #ff0000);
+  background-image: -o-linear-gradient(top, #ff0000, #ff0000);
+  background-image: linear-gradient(to bottom, #ff0000, #ff0000);
+  text-decoration: none;
+}
+/*去除ios上的safari的默认输入框的样式*/
+input,
+button,
+select,
+textarea {
+  outline: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+/*边框阴影*/
+.border-shadow {
+  border: 1px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+/*navbar自定义标签*/
+nav {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  display: block;
+  width: 100%;
+}
+/*头部栏*/
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+/*底部栏*/
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0;
+}
+/*导航栏样式*/
+.navbar {
+  height: 45px;
+  background-color: #9FDA68;
+  text-align: center;
+}

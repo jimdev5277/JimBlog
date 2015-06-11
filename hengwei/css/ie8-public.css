@@ -1,0 +1,39 @@
+/*大图轮播*/
+.adv-part {
+  background-image: url('../img/hanvos.jpg');
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/hanvos.jpg', sizingMethod='scale');
+}
+/*弹出框体*/
+#somedialog {
+  display: none;
+}
+.dialog__content {
+  position: static!important;
+}
+.dialog__content .jobcontent {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: fixed;
+}
+.dialog__content .lpcontent {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: fixed;
+}
+.flexslider .slides p {
+  background-color: #008CD2;
+}
+.flex-control-paging li a {
+  color: #008CD2;
+}
+.list-style-contactus .k-w-s input {
+  right: 10px;
+  top: -2px;
+}
