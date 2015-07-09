@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        .CheckBoxClass {
+            /*display: none;*/
+        }
+
+        .CheckBoxLabelClass {
+            background: url("./img/uncheck2.png") no-repeat;
+            padding-left: 30px;
+            padding-top: 3px;
+            margin: 5px;
+            height: 28px;
+            width: 150px;
+            display: block;
+        }
+
+        .CheckBoxLabelClass:hover, {
+            text-decoration: underline;
+        }
+
+        .LabelSelected {
+            background: url("./img/check-2.png") no-repeat;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<input id="CheckBox1" type="checkbox" class="CheckBoxClass">
+<label id="Label1" class="CheckBoxLabelClass">复选框1</label>
+<input id="CheckBox2" type="checkbox" class="CheckBoxClass">
+<label id="Label2" class="CheckBoxLabelClass">Checkbox 2</label>
+</div>
+<script src="js/jquery.js"></script>
+<script>
+
+    //        $(".CheckBoxClass").change(function(){
+    //            if($(this).is(":checked")){
+    //                $(this).next("label").addClass("LabelSelected");
+    //            }else{
+    //                $(this).next("label").removeClass("LabelSelected");
+    //            }
+    //        });
+    //        $("label").on("click", function () {
+    //            alert("ddd");
+    //            if ($(this).find("[type=checkbox]").is(":checked")) {
+    //                alert("dd");
+    ////                $(this).find("[type=checkbox]").next("label").addClass("LabelSelected");
+    ////                $(this).find("[type=checkbox]").removeAttr("checked");
+    //            } else {
+    ////                $(this).find("[type=checkbox]").next("label").removeClass("LabelSelected");
+    ////                $(this).find("[type=checkbox]").attr("checked", "checked");
+    //            }
+    //        });
+    $("label").on("click", function () {
+        alert("ddd");
+        if ($(this).prev("[type=checkbox]").is(":checked")) {
+            alert("checkbox取消选中了");
+            $(this).prev("[type=checkbox]").attr("checked", false);
+            $(this).removeClass("LabelSelected");
+        } else {
+            alert("checkbox选中了");
+            $(this).prev("[type=checkbox]").prop("checked", true);
+            $(this).addClass("LabelSelected");
+        }
+    });
+
+</script>
+</body>
+</html>
