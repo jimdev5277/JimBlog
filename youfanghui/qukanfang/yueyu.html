@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<meta charset="UTF-8">
+<title>预约看房</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet/less" href="../css/yueyu.less">
+<link rel="stylesheet/less" href="../css/commonhead.less">
+<script src="../js/less-1.3.3.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/yueyu.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar-fixed-top">
+            <div class="navbar-header">
+                <span id="btnback" class="backico"></span>
+                <span class="title">预约看房</span>
+                <div class="vdevider"></div>
+                <img src="../images/duihuared.png" id="duihua">
+            </div>
+
+        </nav>
+        <div class="content">
+            <div style="background-color:#fff;padding-left:0.5rem;padding-right:0.5rem;padding-bottom:0.5rem;">
+                <p class="bigtitle">预约房型</p>
+                <div class="devider"></div>
+                <div style="height:7.42rem">
+                    <img src="../images/ex-huxingtu.jpg" style="height:6.25rem;margin:0.42rem 0 0 0;border:1px solid #808080">
+                    <div style="float:right;width:8.1rem;">
+                        <div style="position: relative;"><span style="font-size:1rem">印象外滩</span><span class="righttext" style="font-size:0.63rem">在售</span>
+                        </div>
+                        <div class="devider"></div>
+                        <p style="font-size:0.55rem;text-align:center;margin-top:0.1rem;">(三室两厅三卫一厨)</p>
+                        <p class="yyfxp">F型：215.20m²</p>
+                        <p class="yyfxp">住宅：214-217m²</p>
+                        <p class="yyfxp">均价：14000元/m²</p>
+                        <p class="yyfxp" style="color:#ff0000">总价：150-200万元</p>
+                        <div class="devider"></div>
+                        <p class="yyfxp">精装 精装标准：5000元/m²<span style="float:right;font-size:0.4rem;margin-top:-0.7rem"><br>(此价格仅供参考)</span>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div style="background-color:#fff;padding-left:0.5rem;padding-right:0.5rem;padding-bottom:0.5rem;margin-top:0.25rem">
+                <p class="bigtitle">客户信息</p>
+                <div class="devider"></div>
+                <div class="row" style="margin-top:0.2rem">
+                    <div class="col-xs-3"><span class="khxxs">姓名</span>
+                    </div>
+                    <div class="col-xs-9">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="row" style="margin-top:0.2rem;">
+                    <div class="col-xs-3"><span class="khxxs">手机号</span>
+                    </div>
+                    <div class="col-xs-9">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="row" style="margin-top:0.2rem">
+                    <div class="col-xs-3"><span class="khxxs">证件类型</span>
+                    </div>
+                    <div class="col-xs-9 btn-group">
+                        <button class="btn btn-default">身份证</button>
+                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">身份证</a>
+                            </li>
+                            <div class="devider"></div>
+                            <li><a href="#">军官证</a>
+                            </li>
+                            <div class="devider"></div>
+                            <li><a href="#">回乡证</a>
+                            </li>
+                            <div class="devider"></div>
+                            <li><a href="#">护照</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:0.2rem;margin-bottom:0.4rem">
+                    <div class="col-xs-3"><span class="khxxs">证件号码</span>
+                    </div>
+                    <div class="col-xs-9">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="devider"></div>
+                <div style="margin-top:-0.6rem;position:relative"><span style="font-size:1.5rem;position:relative;top:0.6rem;margin-right:0.2rem;color:#D11500">*</span><span style="color:#808080">请仔细核对以上信息</span>
+                    <button style="background-color: #fff;color: #D11500;border: 2px solid #D11500;border-radius: 0.25rem;padding-left:0.7rem;padding-right:0.7rem;font-size:0.6rem;position:absolute;right:0;top:0.85rem
+">编辑</button>
+                </div>
+            </div>
+            <div style="background-color:#fff;padding-left:0.5rem;padding-right:0.5rem;padding-bottom:0.5rem;margin-top:0.25rem">
+                <p class="bigtitle">预约时间</p>
+                <div class="devider"></div>
+                <div style="margin:0.2rem 0">
+                    <div class="row">
+                        <div class="col-xs-2"><span class="khxxs">日期</span>
+                        </div>
+                        <div class="col-xs-10">
+                            <input type="date" name="yueyu_date" style="height:1rem">
+                        </div>
+                    </div>
+                </div>
+                <div class="devider"></div>
+                <div style="margin:0.2rem 0">
+                    <div class="row">
+                        <div class="col-xs-2"><span class="khxxs">时间</span>
+                        </div>
+                        <div class="col-xs-10">
+                            <input type="time" name="yueyu_time" style="height:1rem">
+                            <span class="khxxs" style="margin:0.2rem 0">至</span>
+                            <input type="time" name="yueyu_time" style="height:1rem">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cd-popup" role="alert" style="padding-top:5.5rem">
+                <div class="cd-popup-container">
+                    <p>您已成功预约，稍后会有优房汇小秘书来电进行确认，对您造成的不便，还请谅解。</p>
+                    <ul class="cd-buttons list-unstyled" style="padding-left:5rem;padding-right:20px">
+                        <li><a href="#0">确定</a>
+                        </li>
+                        <li><a href="#0" style="color:#fff">在线订单</a>
+                        </li>
+                    </ul>
+                    <a href="#0" class="cd-popup-close img-replace">Close</a>
+                </div>
+                <!-- cd-popup-container -->
+            </div>
+        </div>
+        <nav class="navbar-fixed-bottom">
+            <div class="devider"></div>
+            <div class="row" style="height:50px;margin:0">
+                <div class="col-xs-2" style="background-color:#fff;height:100%;padding:0">
+                    <div style="text-align:center;padding-top:0.3rem">
+                        <img src="../images/wechat.png" style="width:26px"><span style="color:#8F8F8F;display:block;font-size:14px">客服</span>
+                    </div>
+                </div>
+                <div class="col-xs-5" style="background-color:#FF8600;height:100%;text-align:center"><span style="display:inline-block;vertical-align:middle;height:100%"></span><span style="color:#fff;font-size:20px;vertical-align:middle">取消预约</span>
+                </div>
+                <div class="col-xs-5 cd-popup-trigger" style="background-color:#ED0000;height:100%;text-align:center;"><span style="display:inline-block;vertical-align: middle;height:100%"></span><span style="color:#fff;font-size:20px;vertical-align: middle;">确认预约</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>

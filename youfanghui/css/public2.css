@@ -1,0 +1,58 @@
+.projectitem {
+  height: 4.375rem;
+  background-color: #ffffff;
+  position: relative;
+  margin-bottom: 0.125rem;
+}
+.projectitem .projectitem-img {
+  height: 3.2rem;
+  width: 4.25rem;
+  margin-top: 0.625rem;
+  margin-left: 0.5rem;
+}
+.projectitem .projectlistr {
+  margin-left: 0.15rem;
+  height: 100%;
+  padding-top: 0.45rem;
+  padding-right: 0.675rem;
+  position: absolute;
+  top: 0;
+  left: 5rem;
+  width: 11.25rem;
+}
+.projectitem .projectlistp {
+  font-size: 0.725rem;
+}
+.projectitem .projectlists {
+  font-size: 0.625rem;
+  margin-top: 0.15rem;
+  float: right;
+}
+.projectitem .projectlistt {
+  margin-top: -0.1rem;
+  position: relative;
+}
+.projectitem .projectlista {
+  font-size: 0.625rem;
+}
+.projectitem .projectlistj {
+  font-size: 0.625rem;
+  color: #FF0000;
+  position: absolute;
+  right: 0;
+}
+.projectitem .projectlistds {
+  margin-top: 0.05rem;
+}
+.projectitem .projectlistdz {
+  font-size: 0.625rem;
+}
+.projectitem .prejectlistyh {
+  font-size: 0.625rem;
+  color: #ff0000;
+}
+.projectitem .projectlistqt {
+  font-size: 0.625rem;
+  color: #ff0000;
+  margin-left: 0.1rem;
+}

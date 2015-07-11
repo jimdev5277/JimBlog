@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>优房汇首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet/less" href="css/public.less" type="text/css">
+    <!--less动态样式语言要在css文件之后引用-->
+    <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/findlist.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.3, user-scalable=no" />
+</head>
+
+<body>
+    <nav class="navbar-fixed-top">
+        <div class="navbar-header">
+            <span class="backico" id="btnback">
+</span>
+            <input type="text" class="search" placeholder="总价/面积等">
+            <span class="searchico" id="btnsearch"></span>
+        </div>
+        <div class="navbar-filter">
+            <div class="filter-title" id="districtmenu">
+                <div class="navbar-filter dropdown-toggle" data-toggle="dropdown" style="position: relative;">
+                    <p class="ftitle" id="districttitle">区域</p>
+                    <span class="caret" id="caret1" style="position: absolute;left: 70%;top: 42%;"></span>
+                    <span class="rcaret" id="rcaret1" style="position: absolute;left: 70%;top: 42%;"></span>
+                </div>
+                <!--区域菜单-->
+                <ul class="dropdown-menu menu" role="menu" aria-labelledby="district">
+                    <li><a href="#" class="menuitem" style="color: #ff0000">不限</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">海曙</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">江东</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">江北</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">鄞州</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">北仑</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">镇海</a>
+                    </li>
+                    <li class="divider"></li>
+                    <!--<li><a href="#" class="menuitem">搜索</a></li>-->
+                    <li style="text-align: center;height:100%;padding-bottom: 5px;padding-top:7px">
+                        <button class="btn-bianpin2">搜索</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-title" id="areamenu">
+                <div class="navbar-filter dropdown-toggle" data-toggle="dropdown" style="position: relative;">
+                    <div class="vdevider"></div>
+                    <p class="ftitle" id="areatitle">面积</p>
+                    <span class="caret" id="caret2" style="position: absolute;left: 70%;top: 42%;"></span>
+                    <span class="rcaret" id="rcaret2" style="position: absolute;left: 70%;top: 42%;"></span>
+                </div>
+                <!--面积筛选菜单-->
+                <ul class="dropdown-menu menu" role="menu" aria-labelledby="area">
+                    <li><a href="#" class="menuitem" style="color: #ff0000">不限</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">80m²以下</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">80-100m²</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">100-120m²</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">120-140m²</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">140-200m²</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">200m²以上</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li style="height:1.5rem">
+                        <input type="text" class="qujianinputl">
+                        <div class="qjdevider"></div>
+                        <input type="text" class="qujianinputr">
+                    </li>
+                    <li class="divider"></li>
+                    <li style="text-align: center;height:100%;padding-bottom: 5px;padding-top:7px">
+                        <button class="btn-bianpin2">搜索</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-title" id="tpricemenu">
+                <div class="navbar-filter dropdown-toggle" data-toggle="dropdown" style="position: relative;">
+                    <div class="vdevider"></div>
+                    <p class="ftitle" id="tpricetitle">总价</p>
+                    <span class="caret" id="caret3" style="position: absolute;left: 70%;top: 42%;"></span>
+                    <span class="rcaret" id="rcaret3" style="position: absolute;left: 70%;top: 42%;"></span>
+                </div>
+                <!--总价筛选菜单-->
+                <ul class="dropdown-menu menu" role="menu" aria-labelledby="tprice">
+                    <li><a href="#" class="menuitem" style="color: #ff0000">不限</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">60万以下</a>
+                    </li>
+                    <li class="divider" class="menuitem"></li>
+                    <li><a href="#" class="menuitem">60-80万</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">80-100万</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">100-150万</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">150-200万</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">200-300万</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="menuitem">300万以上</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li style="height:1.5rem">
+                        <input type="text" class="qujianinputl">
+                        <div class="qjdevider"></div>
+                        <input type="text" class="qujianinputr">
+                    </li>
+                    <li class="divider"></li>
+                    <li style="text-align: center;height:100%;padding-bottom: 5px;padding-top:7px">
+                        <button class="btn-bianpin2">搜索</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-title" id="moremenu">
+                <div class="navbar-filter dropdown-toggle" data-toggle="dropdown" style="position: relative;">
+                    <div class="vdevider"></div>
+                    <p class="ftitle" id="moretitle">更多</p>
+                    <span class="caret" id="caret4" style="position: absolute;left: 70%;top: 42%;"></span>
+                    <span class="rcaret" id="rcaret4" style="position: absolute;left: 70%;top: 42%;"></span>
+                </div>
+                <!--更多筛选菜单-->
+                <ul class="dropdown-menu menu" role="menu" aria-labelledby="more">
+                    <li><a href="#" class="moremenuiteml">类别</a><span class="itemvdevider"></span><a href="#" class="moremenuitemr">不限</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="moremenuiteml">房型</a><span class="itemvdevider"></span><a href="#" class="moremenuitemr">住宅</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="moremenuiteml">装修</a><span class="itemvdevider"></span><a href="#" class="moremenuitemr">别墅</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="moremenuiteml">学区</a><span class="itemvdevider"></span><a href="#" class="moremenuitemr">公寓</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="moremenuiteml">排序</a><span class="itemvdevider"></span><a href="#" class="moremenuitemr">商业</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="moremenuiteml"></a><span class="itemvdevider"></span><a href="#" class="moremenuitemr">办公楼</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="moremenuiteml"></a><span class="itemvdevider"></span>
+                    </li>
+                    <li class="divider"></li>
+                    <li style="text-align: center;height:100%;padding-bottom: 5px;padding-top:7px">
+                        <button class="btn-bianpin2">搜索</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="devider"></div>
+    </nav>
+    <div id="listoutside">
+        <a href="lookhousetotal.html"><div class="listitem">
+            <img src="images/ex_house.jpg" class="listitem-img">
+
+            <div class="right">
+                <div class="one">
+                    <p class="address">印象外滩</p>
+
+                    <span class="state">在售</span>
+                </div>
+                <div class="devider"></div>
+                <div class="two"><span class="area">别墅:214-217m²</span><span class="load">标准:5000元/m²</span> <span class="housetype">精装</span>
+                </div>
+                <div class="three"><span class="price">均价:8100m²</span><span class="tprice">120-160万元</span>
+                </div>
+                <div class="devider"></div>
+                <img src="images/info.png" style="position: absolute;right: 10px;bottom: 10px;height: 6px">
+            </div>
+        </div>
+        </a>
+        <a href="lookhousetotal.html"><div class="listitem">
+            <img src="images/ex_house.jpg" class="listitem-img">
+
+            <div class="right">
+                <div class="one">
+                    <p class="address">印象外滩</p>
+
+                    <span class="state">在售</span>
+                </div>
+                <div class="devider"></div>
+                <div class="two"><span class="area">别墅:214-217m²</span><span class="load">标准:5000元/m²</span> <span class="housetype">精装</span>
+                </div>
+                <div class="three"><span class="price">均价:8100m²</span><span class="tprice">120-160万元</span>
+                </div>
+                <div class="devider"></div>
+                <img src="images/info.png" style="position: absolute;right: 10px;bottom: 10px;height: 6px">
+            </div>
+        </div>
+        </a>
+        <a href="lookhousetotal.html"><div class="listitem">
+            <img src="images/ex_house.jpg" class="listitem-img">
+
+            <div class="right">
+                <div class="one">
+                    <p class="address">印象外滩</p>
+
+                    <span class="state">在售</span>
+                </div>
+                <div class="devider"></div>
+                <div class="two"><span class="area">别墅:214-217m²</span><span class="load">标准:5000元/m²</span> <span class="housetype">精装</span>
+                </div>
+                <div class="three"><span class="price">均价:8100m²</span><span class="tprice">120-160万元</span>
+                </div>
+                <div class="devider"></div>
+                <img src="images/info.png" style="position: absolute;right: 10px;bottom: 10px;height: 6px">
+            </div>
+        </div>
+        </a>
+        <a href="lookhousetotal.html"><div class="listitem">
+            <img src="images/ex_house.jpg" class="listitem-img">
+
+            <div class="right">
+                <div class="one">
+                    <p class="address">印象外滩</p>
+
+                    <span class="state">在售</span>
+                </div>
+                <div class="devider"></div>
+                <div class="two"><span class="area">别墅:214-217m²</span><span class="load">标准:5000元/m²</span> <span class="housetype">精装</span>
+                </div>
+                <div class="three"><span class="price">均价:8100m²</span><span class="tprice">120-160万元</span>
+                </div>
+                <div class="devider"></div>
+                <img src="images/info.png" style="position: absolute;right: 10px;bottom: 10px;height: 6px">
+            </div>
+        </div>
+        </a>
+        <a href="lookhousetotal.html"><div class="listitem">
+            <img src="images/ex_house.jpg" class="listitem-img">
+
+            <div class="right">
+                <div class="one">
+                    <p class="address">印象外滩</p>
+
+                    <span class="state">在售</span>
+                </div>
+                <div class="devider"></div>
+                <div class="two"><span class="area">别墅:214-217m²</span><span class="load">标准:5000元/m²</span> <span class="housetype">精装</span>
+                </div>
+                <div class="three"><span class="price">均价:8100m²</span><span class="tprice">120-160万元</span>
+                </div>
+                <div class="devider"></div>
+                <img src="images/info.png" style="position: absolute;right: 10px;bottom: 10px;height: 6px">
+            </div>
+        </div>
+        </a>
+    </div>
+</body>
+
+</html>

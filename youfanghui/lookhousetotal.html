@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>找房子项目项</title>
+    <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet/less" href="css/house2.less" type="text/css">
+    <link rel="stylesheet/less" href="css/public.less" type="text/css">
+    <link rel="stylesheet/less" href="css/public2.less" type="text/css">
+    <!--less动态样式语言要在css文件之后引用-->
+    <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--百度地图api-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=EH67y0MgZ051sEx4F7OqK8YH&"></script>
+    <script src="js/lookhouse.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+</head>
+
+<body>
+<div class="container-fluid" style="padding: 0px">
+    <nav class="navbar-fixed-top">
+        <div class="navbar-header">
+                <span class="backico" id="btnback">
+       </span>
+            <span class="title">印象外滩</span>
+            <img src="images/yueico.png" id="yuebao">
+
+            <div class="vdevider"></div>
+            <img src="images/shareblack.png" id="share">
+        </div>
+        <div class="devider"></div>
+        <div class="navbar-filter">
+            <div class="filter-title" id="xiangmuarea"><span id="projecttitle">项目</span>
+
+                <div class="redline" id="redline1"></div>
+            </div>
+            <div class="vdevider"></div>
+            <div class="filter-title" style="margin: 0px -1px" id="huxingarea"><span id="huxingt">户型</span>
+
+                <div class="redline" id="redline2"></div>
+            </div>
+            <div class="vdevider"></div>
+            <div class="filter-title" id="tuijianarea"><span id="recommend">推荐</span>
+
+                <div class="redline" id="redline3"></div>
+            </div>
+        </div>
+        <div class="devider"></div>
+    </nav>
+    <div class="content" id="projectcontent">
+        <div>
+            <div class="carousel slide" data-ride="carousel" style="height: 11rem">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" style="text-align:center;height: 100%">
+                    <div class="item active"><img alt="First slide"
+                                                  src="http://file.bmob.cn/M00/01/FC/oYYBAFS9uaaADEojAAQh6Wg3VO4915.jpg">
+
+                        <div class="carousel-caption">
+                            <h4>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h4>
+
+                            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+                        </div>
+                    </div>
+                    <div class="item"><img alt="Second slide"
+                                           src="http://file.bmob.cn/M00/01/FC/oYYBAFS9uXmAcFUkAATs6xO-Sxw947.jpg">
+                    </div>
+                    <div class="item"><img alt="Third slide"
+                                           src="http://file.bmob.cn/M00/01/FC/oYYBAFS9uXmAcFUkAATs6xO-Sxw947.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <div style="height:60px;width:100%;padding: 5px 10px;border: 1px solid #DE898D;background-color: #ffffff;margin-top: 5px">
+                <div style="position: relative;width: 100%;height: 50%">
+                    <img src="images/coupon.png" style="height: 17px">
+                    <span class="hcouponfont" style="position: absolute;left: 25px;">楼盘优惠</span>
+                    <span class="hcouponfont" style="position: absolute;right: 0">优惠内容</span>
+                </div>
+                <div class="reddevider"></div>
+                <div style="position: relative;width: 100%;height: 50%">
+                    <img src="images/cash.png" style="height: 20px">
+                    <span class="hcouponfont" style="position: absolute;left: 25px">返现信息</span>
+                    <span class="hcouponfont" style="position: absolute;right: 0">返现信息内容</span>
+                </div>
+            </div>
+        </div>
+        <div class="contentp">项目评分</div>
+
+        <div style="height:auto;width: 100%;background-color: #ffffff;padding: 5px 10px;" class="evalucation">
+            <ul class="list-unstyled" style="width: 100%;">
+                <li style="height: 150px;margin-top: 10px">
+                    <div style="height: 100%" class="row">
+                        <div class="col-xs-4" style="height: 100%;margin-right: -10px;margin-left: -5px;">
+                            <div style="border: 1px solid #E2E2E2;height: 85%;padding: 15px 5px 5px 5px">
+                                <p style="font-size: 1.1rem;color: #FF0000;margin: 0px;" class="text-center">4.8分</p>
+
+                                <div style="text-align:center">
+                                    <img src="images/lightstar.png" class="star">
+                                    <img src="images/lightstar.png" class="star">
+                                    <img src="images/lightstar.png" class="star">
+                                    <img src="images/lightstar.png" class="star">
+                                    <img src="images/lightstar.png" class="star">
+                                </div>
+                                <div class="devider"></div>
+                                <p class="text-center" style="font-size: 0.7rem;color: #787878">68人评分</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-4" style="padding: 0.3rem 0px 0px 0px">
+                            <ul class="list-unstyled">
+                                <li class="commentword">朝向
+                                    <div style="display: inline">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                    </div>
+                                </li>
+                                <li class="commentword">通风
+                                    <div style="display: inline">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                    </div>
+                                </li>
+                                <li class="commentword">采光
+                                    <div style="display: inline">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                    </div>
+                                </li>
+                                <li class="commentword">动静
+                                    <div style="display: inline">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                    </div>
+                                </li>
+                                <li class="commentword">方正
+                                    <div style="display: inline">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4" style="padding: 0.3rem 0px 0px 0px;margin-left: -5px;">
+                            <ul class="list-unstyled" style="margin-right: -8px">
+                                <li class="commentword">功能性
+                                    <div style="display: inline">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                    </div>
+                                </li>
+                                <li class="commentword">得房率
+                                    <div style="display: inline">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                    </div>
+                                </li>
+                                <li class="commentword">使用率
+                                    <div style="display: inline">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                    </div>
+                                </li>
+                                <li class="commentword">紧凑度
+                                    <div style="display: inline">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                    </div>
+                                </li>
+                                <li class="commentword">宽深比
+                                    <div style="display: inline">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                        <img src="images/lightstar.png" class="star">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <div class="devider"></div>
+                <li class="score">
+                    <div><span class="name">网友名字</span>
+
+                        <div style="display: inline">
+                            <img src="images/lightstar.png" class="star">
+                            <img src="images/lightstar.png" class="star">
+                            <img src="images/lightstar.png" class="star">
+                            <img src="images/lightstar.png" class="star">
+                            <img src="images/lightstar.png" class="star">
+                        </div>
+                    </div>
+                    <p class="comment">好房子错过不再有，已经交费，等着入住。好期待这一刻。</p>
+
+                    <p class="sendtime text-right">发送时间</p>
+                </li>
+                <div class="devider"></div>
+                <li class="score">
+                    <div><span class="name">网友名字</span>
+
+                        <div style="display: inline">
+                            <img src="images/lightstar.png" class="star">
+                            <img src="images/lightstar.png" class="star">
+                            <img src="images/lightstar.png" class="star">
+                            <img src="images/lightstar.png" class="star">
+                            <img src="images/lightstar.png" class="star">
+                        </div>
+                    </div>
+                    <p class="comment">好房子错过不再有，已经交费，等着入住。好期待这一刻。</p>
+
+                    <p class="sendtime text-right">发送时间</p>
+                </li>
+                <div class="devider"></div>
+                <li class="score">
+                    <div><span class="name">网友名字</span>
+
+                        <div style="display: inline">
+                            <img src="images/lightstar.png" class="star">
+                            <img src="images/lightstar.png" class="star">
+                            <img src="images/lightstar.png" class="star">
+                            <img src="images/lightstar.png" class="star">
+                            <img src="images/lightstar.png" class="star">
+                        </div>
+                    </div>
+                    <p class="comment">好房子错过不再有，已经交费，等着入住。好期待这一刻。</p>
+
+                    <p class="sendtime text-right">发送时间</p>
+                </li>
+            </ul>
+        </div>
+        <div class="contentp">项目信息</div>
+
+        <div style="height: auto;width: 100%;background-color: #ffffff;padding: 10px 10px;">
+            <div class="row" style="height: 300px;">
+                <div class="col-xs-4">
+                    <ul class="list-unstyled">
+                        <li class="itemwordl">物业类别</li>
+                        <li class="itemwordl">建筑列表</li>
+                        <li class="itemwordl">装修状况</li>
+                        <li class="itemwordl">占地面积</li>
+                        <li class="itemwordl">建筑面积</li>
+                        <li class="itemwordl">容积率</li>
+                        <li class="itemwordl">绿化率</li>
+                        <li class="itemwordl">停车位</li>
+                        <li class="itemwordl">总套数</li>
+                        <li class="itemwordl">交房时间</li>
+                        <li class="itemwordl">物业费</li>
+                        <li class="itemwordl">开发商</li>
+                        <li class="itemwordl">预售许可证</li>
+                        <li class="itemwordl">售楼地址</li>
+                    </ul>
+                </div>
+                <div class="col-xs-8">
+                    <ul class="list-unstyled">
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                        <li class="itemwordr">这边是对应的相应内容</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="devider"></div>
+            <div style="height: auto">
+                <span style="width: 100%;font-size: 0.9rem;height: 30px;line-height: 30px;">项目分期情况</span>
+
+                <div class="row-fluid">
+                    <div class="span12">
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <span>期数</span>
+                                </td>
+                                <td>
+                                    <span>产品类别</span>
+                                </td>
+                                <td>
+                                    <span>主力面积</span>
+                                </td>
+                                <td>
+                                    <span> 主力户型</span>
+                                </td>
+                                <td>
+                                    <span> 套数</span>
+                                </td>
+                                <td>
+                                    <span>  幢数</span>
+                                </td>
+                                <td>
+                                    <span> 均价</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>一期</span>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>二期</span>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>三期</span>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>四期</span>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentp">位置与周边</div>
+        <a href="surrounding.html">
+        <div style="height: auto;width: 100%;background-color: #ffffff">
+            <div>
+                <span class="surroundp">项目地址</span>
+                <span class="surroundsp">鄞州区东至金达南路，南至鄞州大道,西至下应大道</span>
+            </div>
+            <!--<p style="height: 180px">这是地图的位置</p>-->
+            <div id="allmap" style="height: 180px;overflow: hidden;"></div>
+            <div>
+                <span class="surroundp">周边设施</span>
+                <span class="surroundsp">餐饮、地铁、公交、学校、医院等各种周边设施查询</span>
+            </div>
+        </div>
+        </a>
+        <div class="contentp">项目统计图</div>
+
+        <div style="height: 220px;width: 100%;background-color: #ffffff;padding: 10px 10px 0px 10px">
+            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default">周统计</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default">月统计</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default">已售统计</button>
+                </div>
+            </div>
+        </div>
+        <div class="contentp">类似项目</div>
+
+        <div style="height: auto;width: 100%;padding-bottom: 1px">
+            <div class="projectitem">
+                <img src="http://file.bmob.cn/M00/03/62/oYYBAFS_DAeAUMMfAARG4Y3f1hg366.jpg" class="projectitem-img">
+
+                <div class="projectlistr" style="width:70%">
+                    <div>
+                            <span class="projectlistp">
+                  万科金福花苑
+                 </span>
+                        <span class="projectlists">在售</span>
+                    </div>
+                    <div class="projectlistt">
+                        <span class="projectlista">别墅:215-300m²</span>
+                        <span class="projectlistj">均价:15000元/m²</span>
+                    </div>
+                    <div class="projectlistds">
+                        <span class="projectlistdz">地址:南部商务区莫莫山路5456号</span>
+                    </div>
+                    <div class="projectlistds">
+                        <span class="prejectlistyh">优惠</span>
+                        <span class="projectlistqt">返现</span>
+                        <span class="projectlistqt">学区</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projectitem">
+                <img src="http://file.bmob.cn/M00/03/62/oYYBAFS_DBqAOmD_AAR-tdyNE78174.jpg" class="projectitem-img">
+
+                <div class="projectlistr" style="width:70%">
+                    <div>
+                            <span class="projectlistp">
+                  万科金福花苑
+                 </span>
+                        <span class="projectlists">在售</span>
+                    </div>
+                    <div class="projectlistt">
+                        <span class="projectlista">别墅:215-300m²</span>
+                        <span class="projectlistj">均价:15000元/m²</span>
+                    </div>
+                    <div class="projectlistds">
+                        <span class="projectlistdz">地址:南部商务区莫莫山路5456号</span>
+                    </div>
+                    <div class="projectlistds">
+                        <span class="prejectlistyh">优惠</span>
+                        <span class="projectlistqt">返现</span>
+                        <span class="projectlistqt">学区</span>
+                    </div>
+                </div>
+            </div>
+            <div class="projectitem">
+                <img src="http://file.bmob.cn/M00/03/62/oYYBAFS_DCeAH2jGAAQxvT2Yf2Y389.jpg" class="projectitem-img">
+
+                <div class="projectlistr" style="width:70%">
+                    <div>
+                            <span class="projectlistp">
+                  万科金福花苑
+                 </span>
+                        <span class="projectlists">在售</span>
+                    </div>
+                    <div class="projectlistt">
+                        <span class="projectlista">别墅:215-300m²</span>
+                        <span class="projectlistj">均价:15000元/m²</span>
+                    </div>
+                    <div class="projectlistds">
+                        <span class="projectlistdz">地址:南部商务区莫莫山路5456号</span>
+                    </div>
+                    <div class="projectlistds">
+                        <span class="prejectlistyh">优惠</span>
+                        <span class="projectlistqt">返现</span>
+                        <span class="projectlistqt">学区</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="content" id="huxingcontent">
+        <div id="hxzg">
+            <p style="line-height:1.3rem;margin-bottom:0;font-size:0.9rem;padding-left:0.85rem">项目户型</p>
+
+            <div>
+                <div class="row" style="margin:0">
+                    <div class="col-xs-6 hxzgtb ">
+                        <img src="images/ex-hxzg.png" alt=" " class="hxzgt ">
+
+                        <div>
+                            <p class="hxzgname">A户型(四房三厅四卫)</p>
+
+                            <div class="devider"></div>
+                            <p class="hxzgtype">别墅:220-225m²</p>
+
+                            <p class="hxzgzj">总价:360-410万</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 hxzgtb "><img src="images/ex-hxzg.png" alt=" " class="hxzgt ">
+
+                        <div>
+                            <p class="hxzgname">A户型(四房三厅四卫)</p>
+
+                            <div class="devider"></div>
+                            <p class="hxzgtype">别墅:220-225m²</p>
+
+                            <p class="hxzgzj">总价:360-410万</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin:0">
+                    <div class="col-xs-6 hxzgtb ">
+                        <img src="images/ex-hxzg.png" alt=" " class="hxzgt ">
+
+                        <div>
+                            <p class="hxzgname">A户型(四房三厅四卫)</p>
+
+                            <div class="devider"></div>
+                            <p class="hxzgtype">别墅:220-225m²</p>
+
+                            <p class="hxzgzj">总价:360-410万</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 hxzgtb "><img src="images/ex-hxzg.png" alt=" " class="hxzgt ">
+
+                        <div>
+                            <p class="hxzgname">A户型(四房三厅四卫)</p>
+
+                            <div class="devider"></div>
+                            <p class="hxzgtype">别墅:220-225m²</p>
+
+                            <p class="hxzgzj">总价:360-410万</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin:0">
+                    <div class="col-xs-6 hxzgtb ">
+                        <img src="images/ex-hxzg.png" alt=" " class="hxzgt ">
+
+                        <div>
+                            <p class="hxzgname">A户型(四房三厅四卫)</p>
+
+                            <div class="devider"></div>
+                            <p class="hxzgtype">别墅:220-225m²</p>
+
+                            <p class="hxzgzj">总价:360-410万</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 hxzgtb "><img src="images/ex-hxzg.png" alt=" " class="hxzgt ">
+
+                        <div>
+                            <p class="hxzgname">A户型(四房三厅四卫)</p>
+
+                            <div class="devider"></div>
+                            <p class="hxzgtype">别墅:220-225m²</p>
+
+                            <p class="hxzgzj">总价:360-410万</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="houseinfo " style="background-color: #ffffff ">
+            <div style="padding: 15px 10px 10px 10px;background-color: #ffffff ">
+                <img src="images/ex-huxingtu.jpg " style="width: 100%;border: 1px solid #B6B6B6 ">
+            </div>
+            <div id="hinfo ">
+                <div style="position: relative;padding: 0px 5px ">
+                    <span style="font-size: 1.3rem;overflow: hidden;text-overflow: ellipsis ">印象外滩</span>
+                    <span style="font-size:0.5rem ">(三室两厅两卫)</span>
+                    <span style="font-size: 0.9rem;position: absolute;right: 5px;bottom: 0; ">在售</span>
+                </div>
+                <div style="position: relative;padding: 0px 5px;margin-top: 2px ">
+                    <span class="hinfotext " style="font-size: 0.8rem ">F型号:215.20m²</span>
+                    <span style="font-size: 1.2rem;right:5px;bottom: -5px;color: #ff0000;position: absolute ">150万</span>
+                </div>
+                <div style="position: relative;padding: 0px 5px;margin-top: 1px ">
+                    <span class="hinfotext " style="font-size: 0.8rem ">住宅214-217m²</span>
+                    <span class="hinfotext " style="font-size: 0.8rem;position: absolute;right: 5px;bottom: 0 ">均价:147000m²</span>
+                </div>
+                <div style="position: relative;padding: 0px 5px;margin-bottom: 5px ">
+                    <span class="hinfotext " style="font-size: 0.8rem ">精装标准:5000m²</span>
+                </div>
+                <div class="devider "></div>
+            </div>
+            <div style="height: 200px;width: 100% ">
+                <div style="height: 200px;width: 50%;float: left ">
+                    <span class="featuretitle ">优势</span>
+
+                    <p class="featurecontent ">1.这边是优势的段落内容</p>
+
+                    <p class="featurecontent ">2.这边是优势的段落内容</p>
+
+                    <p class="featurecontent ">3.这边是优势的段落内容</p>
+
+                    <p class="featurecontent ">4.这边是优势的段落内容</p>
+                </div>
+                <div style="height: 200px;width: 50%;float:right ">
+                    <span class="featuretitle ">劣势</span>
+
+                    <p class="featurecontent ">1.这边是裂势的段落内容</p>
+
+                    <p class="featurecontent ">2.这边是裂势的段落内容</p>
+
+                    <p class="featurecontent ">3.这边是裂势的段落内容</p>
+
+                    <p class="featurecontent ">4.这边是裂势的段落内容</p>
+                </div>
+            </div>
+            <div style="height:60px;width:100%;padding: 5px 10px;border: 1px solid #DE898D;background-color: #ffffff;margin-top: 5px ">
+                <div style="position: relative;width: 100%;height: 50% ">
+                    <img src="images/coupon.png " style="height: 17px ">
+                    <span class="hcouponfont " style="position: absolute;left: 25px; ">楼盘优惠</span>
+                    <span class="hcouponfont " style="position: absolute;right: 0 ">优惠内容</span>
+                </div>
+                <div class="reddevider "></div>
+                <div style="position: relative;width: 100%;height: 50% ">
+                    <img src="images/cash.png " style="height: 20px ">
+                    <span class="hcouponfont " style="position: absolute;left: 25px ">返现信息</span>
+                    <span class="hcouponfont " style="position: absolute;right: 0 ">返现信息内容</span>
+                </div>
+            </div>
+            <div class="contentp ">户型评分</div>
+
+            <div style="height:auto;width: 100%;background-color: #ffffff;padding: 5px 10px; " class="evalucation ">
+                <ul class="list-unstyled " style="width: 100%; ">
+                    <li style="height: 150px;margin-top: 10px ">
+                        <div style="height: 100% " class="row ">
+                            <div class="col-xs-4 " style="height: 100%;margin-right: -10px;margin-left: -5px; ">
+                                <div style="border: 1px solid #E2E2E2;height: 80%;padding: 15px 5px 5px 5px ">
+                                    <p style="font-size: 1.1rem;color: #FF0000;margin: 0px; " class="text-center ">
+                                        4.8分</p>
+
+                                    <div>
+                                        <img src="images/lightstar.png " class="star ">
+                                        <img src="images/lightstar.png " class="star ">
+                                        <img src="images/lightstar.png " class="star ">
+                                        <img src="images/lightstar.png " class="star ">
+                                        <img src="images/lightstar.png " class="star ">
+                                    </div>
+                                    <div class="devider "></div>
+                                    <p class="text-center " style="font-size: 0.9rem;color: #787878 ">68人评分</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 " style="padding: 0px ">
+                                <ul class="list-unstyled ">
+                                    <li class="commentword ">朝向
+                                        <div style="display: inline ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                        </div>
+                                    </li>
+                                    <li class="commentword ">通风
+                                        <div style="display: inline ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                        </div>
+                                    </li>
+                                    <li class="commentword ">采光
+                                        <div style="display: inline ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                        </div>
+                                    </li>
+                                    <li class="commentword ">动静
+                                        <div style="display: inline ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                        </div>
+                                    </li>
+                                    <li class="commentword ">方正
+                                        <div style="display: inline ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-4 " style="padding: 0px;margin-left: -5px; ">
+                                <ul class="list-unstyled " style="margin-right: -8px ">
+                                    <li class="commentword ">功能性
+                                        <div style="display: inline ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                        </div>
+                                    </li>
+                                    <li class="commentword ">得房率
+                                        <div style="display: inline ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                        </div>
+                                    </li>
+                                    <li class="commentword ">使用率
+                                        <div style="display: inline ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                        </div>
+                                    </li>
+                                    <li class="commentword ">紧凑度
+                                        <div style="display: inline ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                        </div>
+                                    </li>
+                                    <li class="commentword ">宽深比
+                                        <div style="display: inline ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                            <img src="images/lightstar.png " class="star ">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="devider "></div>
+                    <li class="score ">
+                        <div><span class="name ">网友名字</span>
+
+                            <div style="display: inline ">
+                                <img src="images/lightstar.png " class="star ">
+                                <img src="images/lightstar.png " class="star ">
+                                <img src="images/lightstar.png " class="star ">
+                                <img src="images/lightstar.png " class="star ">
+                                <img src="images/lightstar.png " class="star ">
+                            </div>
+                        </div>
+                        <p class="comment ">好房子错过不再有，已经交费，等着入住。好期待这一刻。</p>
+
+                        <p class="sendtime text-right ">发送时间</p>
+                    </li>
+                    <div class="devider "></div>
+                    <li class="score ">
+                        <div><span class="name ">网友名字</span>
+
+                            <div style="display: inline ">
+                                <img src="images/lightstar.png " class="star ">
+                                <img src="images/lightstar.png " class="star ">
+                                <img src="images/lightstar.png " class="star ">
+                                <img src="images/lightstar.png " class="star ">
+                                <img src="images/lightstar.png " class="star ">
+                            </div>
+                        </div>
+                        <p class="comment ">好房子错过不再有，已经交费，等着入住。好期待这一刻。</p>
+
+                        <p class="sendtime text-right ">发送时间</p>
+                    </li>
+                    <div class="devider "></div>
+                    <li class="score ">
+                        <div><span class="name ">网友名字</span>
+
+                            <div style="display: inline ">
+                                <img src="images/lightstar.png " class="star ">
+                                <img src="images/lightstar.png " class="star ">
+                                <img src="images/lightstar.png " class="star ">
+                                <img src="images/lightstar.png " class="star ">
+                                <img src="images/lightstar.png " class="star ">
+                            </div>
+                        </div>
+                        <p class="comment ">好房子错过不再有，已经交费，等着入住。好期待这一刻。</p>
+
+                        <p class="sendtime text-right ">发送时间</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="contentp ">项目平面图</div>
+        <div style="background-color: #ffffff ">
+            <div style="padding: 15px 10px 10px 10px;background-color: #ffffff ">
+                <img src="images/ex-huxingtu.jpg " style="width: 100%;border: 1px solid #B6B6B6 ">
+            </div>
+            <div>
+                <div class="row " style="padding: 0px 10px ">
+                    <div class="col-xs-4 " style="padding-right: 0px ">
+                        <spn>期号</spn>
+                        <div class="btn-group ">
+                            <button type="button " class="btn btn-default " style="padding: 0px 10px ">一</button>
+                            <button type="button " class="btn btn-default dropdown-toggle " data-toggle="dropdown "
+                                    aria-expanded="false " style="padding: 0px 4px ">
+                                <span class="caret "></span>
+                                <span class="sr-only ">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu " role="menu ">
+                                <li><a href="# ">二</a>
+                                </li>
+                                <li><a href="# ">三</a>
+                                </li>
+                                <li><a href="# ">四</a>
+                                </li>
+                                <li class="divider "></li>
+                                <li><a href="# ">五</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 " style="padding-right: 0px ">
+                        <spn>幢号</spn>
+                        <div class="btn-group ">
+                            <button type="button " class="btn btn-default " style="padding: 0px 10px ">01</button>
+                            <button type="button " class="btn btn-default dropdown-toggle " data-toggle="dropdown "
+                                    aria-expanded="false " style="padding: 0px 4px ">
+                                <span class="caret "></span>
+                                <span class="sr-only ">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu " role="menu ">
+                                <li><a href="# ">二</a>
+                                </li>
+                                <li><a href="# ">三</a>
+                                </li>
+                                <li><a href="# ">四</a>
+                                </li>
+                                <li class="divider "></li>
+                                <li><a href="# ">五</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 " style="padding-right: 0px ">
+                        <spn>单元</spn>
+                        <div class="btn-group ">
+                            <button type="button " class="btn btn-default " style="padding: 0px 10px ">15</button>
+                            <button type="button " class="btn btn-default dropdown-toggle " data-toggle="dropdown "
+                                    aria-expanded="false " style="padding: 0px 4px ">
+                                <span class="caret "></span>
+                                <span class="sr-only ">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu " role="menu ">
+                                <li><a href="# ">二</a>
+                                </li>
+                                <li><a href="# ">三</a>
+                                </li>
+                                <li><a href="# ">四</a>
+                                </li>
+                                <li class="divider "></li>
+                                <li><a href="# ">五</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 60px;text-align: center ">
+                <span style="height: 100%;display: inline-block;vertical-align: middle "></span>
+                <button class="btn-bianpin " style="padding: 4px 20px;vertical-align: middle ">余房查询</button>
+            </div>
+            <div class="devider " style="padding: 0 10px "></div>
+            <div style="height: 30px;text-align: center ">
+                    <span style="height: 100%;display: inline-block;vertical-align: middle ">
+                    <span style="vertical-align: middle;color: #787878;font-size: 0.7rem ">
+                        结果:共6项，共1/2页
+                    </span>
+
+                    </span>
+            </div>
+            <div style="height: 150px ">
+
+            </div>
+
+            <div>
+            </div>
+        </div>
+        <div class="contentp ">户型统计图</div>
+        <div style="height: 220px;width: 100%;background-color: #ffffff;padding: 10px 10px 0px 10px ">
+            <div class="btn-group btn-group-justified " role="group " aria-label="... ">
+                <div class="btn-group " role="group ">
+                    <button type="button " class="btn btn-default ">周统计</button>
+                </div>
+                <div class="btn-group " role="group ">
+                    <button type="button " class="btn btn-default ">月统计</button>
+                </div>
+                <div class="btn-group " role="group ">
+                    <button type="button " class="btn btn-default ">已售统计</button>
+                </div>
+            </div>
+        </div>
+        <div class="contentp ">类似户型</div>
+        <div class="listinside ">
+            <div class="listitem ">
+                <img src="images/ex_house.jpg " class="listitem-img ">
+
+                <div class="right ">
+                    <div class="one ">
+                        <p class="address ">印象外滩</p>
+
+                        <span class="state ">在售</span>
+                    </div>
+                    <div class="devider "></div>
+                    <div class="two "><span class="area ">别墅:214-217m²</span><span class="load ">标准:5000元/m²</span>
+                        <span class="housetype ">精装</span>
+                    </div>
+                    <div class="three "><span class="price ">均价:8100m²</span><span class="tprice ">120-160万元</span>
+                    </div>
+                    <div class="devider "></div>
+                    <img src="images/info.png " style="position: absolute;right: 10px;bottom: 10px;height: 6px ">
+                </div>
+            </div>
+            <div class="listitem ">
+                <img src="images/ex_house.jpg " class="listitem-img ">
+
+                <div class="right ">
+                    <div class="one ">
+                        <p class="address ">印象外滩</p>
+
+                        <span class="state ">在售</span>
+                    </div>
+                    <div class="devider "></div>
+                    <div class="two "><span class="area ">别墅:214-217m²</span><span class="load ">标准:5000元/m²</span>
+                        <span class="housetype ">精装</span>
+                    </div>
+                    <div class="three "><span class="price ">均价:8100m²</span><span class="tprice ">120-160万元</span>
+                    </div>
+                    <div class="devider "></div>
+                    <img src="images/info.png " style="position: absolute;right: 10px;bottom: 10px;height: 6px ">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="content " id="recommendcontent ">
+        <div>
+            <div class="carousel slide " data-ride="carousel " style="height: 11rem ">
+                <ol class="carousel-indicators ">
+                    <li data-target="#carousel-example-generic " data-slide-to="0 " class="active "></li>
+                    <li data-target="#carousel-example-generic " data-slide-to="1 "></li>
+                    <li data-target="#carousel-example-generic " data-slide-to="2 "></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner " style="text-align:center;height: 100% ">
+                    <div class="item active "><img class="bannerimg " alt="First slide "
+                                                   src="http://file.bmob.cn/M00/01/FC/oYYBAFS9uaaADEojAAQh6Wg3VO4915.jpg ">
+
+                        <div class="carousel-caption ">
+                            <h4>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h4>
+
+                            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+                        </div>
+                    </div>
+                    <div class="item "><img alt="Second slide "
+                                            src="http://file.bmob.cn/M00/01/FC/oYYBAFS9uXmAcFUkAATs6xO-Sxw947.jpg ">
+                    </div>
+                    <div class="item "><img alt="Third slide "
+                                            src="http://file.bmob.cn/M00/01/FC/oYYBAFS9uXmAcFUkAATs6xO-Sxw947.jpg ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #ffffff;margin-top: 8px; ">
+            <p style="font-size: 0.8rem;margin-left: 5px;line-height: 30px;margin-bottom: 0px ">相关资讯(50条)</p>
+
+            <div class="devider "></div>
+            <div style="margin-top: 5px ">
+                <div class="row ">
+                    <div class="col-xs-8 ">
+                        <ul class="list-unstyled ">
+                            <li>
+                                <u class="remcommendp ">中海国际社区11月23日看房团召集中</u>
+                            </li>
+                            <li>
+                                <u class="remcommendp ">9月27日鄞州线金九看房团火热报名中</u>
+                            </li>
+                            <li>
+                                <u class="remcommendp ">降价风持续蔓延六字头起楼市将何去何从</u>
+                            </li>
+                            <li>
+                                <u class="remcommendp ">中海国际社区11月23日看房团召集中</u>
+                            </li>
+                            <li>
+                                <u class="remcommendp ">9月27日鄞州线金九看房团火热报名中</u>
+                            </li>
+                            <li>
+                                <u class="remcommendp ">降价风持续蔓延六字头起楼市将何去何从</u>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 ">
+                        <ul class="list-unstyled ">
+                            <li class="remcommendrp ">2015-2-16</li>
+                            <li class="remcommendrp ">2015-1-26</li>
+                            <li class="remcommendrp ">2015-3-16</li>
+                            <li class="remcommendrp ">2015-2-16</li>
+                            <li class="remcommendrp ">2015-1-26</li>
+                            <li class="remcommendrp ">2015-3-16</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentp ">开发商推荐</div>
+        <div class="listinside ">
+            <div class="listitem ">
+                <img src="images/ex_house.jpg " class="listitem-img ">
+
+                <div class="right ">
+                    <div class="one ">
+                        <p class="address ">印象外滩</p>
+
+                        <span class="state ">在售</span>
+                    </div>
+                    <div class="devider "></div>
+                    <div class="two "><span class="area ">别墅:214-217m²</span><span class="load ">标准:5000元/m²</span>
+                        <span class="housetype ">精装</span>
+                    </div>
+                    <div class="three "><span class="price ">均价:8100m²</span><span class="tprice ">120-160万元</span>
+                    </div>
+                    <div class="devider "></div>
+                    <img src="images/info.png " style="position: absolute;right: 10px;bottom: 10px;height: 6px ">
+                </div>
+            </div>
+            <div class="listitem ">
+                <img src="images/ex_house.jpg " class="listitem-img ">
+
+                <div class="right ">
+                    <div class="one ">
+                        <p class="address ">印象外滩</p>
+
+                        <span class="state ">在售</span>
+                    </div>
+                    <div class="devider "></div>
+                    <div class="two "><span class="area ">别墅:214-217m²</span><span class="load ">标准:5000元/m²</span>
+                        <span class="housetype ">精装</span>
+                    </div>
+                    <div class="three "><span class="price ">均价:8100m²</span><span class="tprice ">120-160万元</span>
+                    </div>
+                    <div class="devider "></div>
+                    <img src="images/info.png " style="position: absolute;right: 10px;bottom: 10px;height: 6px ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar-fixed-bottom ">
+        <div class="devider "></div>
+        <div class="row dropup " style="background-color: #ffffff;height: 50px;width: 100%;margin: 0px ">
+            <!--<span>底部蓝</span>-->
+            <div class="col-xs-2 dropdown-toggle " data-toggle="dropdown " aria-expanded="false "
+                 style="height: 100%;padding: 0px;margin-right: -1px;text-align: center "><img src="images/wechat.png "
+                                                                                               style="margin-top: 5px;height: 25px;width: 30px; "><span>客服</span>
+            </div>
+            <div class="vbdevider "></div>
+            <div class="col-xs-2 " style="height: 100%;padding: 0px;text-align: center "><img src="images/star.png "
+                                                                                              style="width: 25px;height: 25px;margin-top: 5px "><span
+                    class="text-center ">收藏</span>
+            </div>
+            <div class="col-xs-4 " style="background-color: #FE8500;height: 100%;padding: 0px; "><span>加入新房宝</span>
+            </div>
+            <div class="col-xs-4 " style="background-color: #EE0000;height: 100%;padding: 0px; "><span>预约看房</span>
+            </div>
+            <ul class="dropdown-menu " role="menu " style="margin-left: 3px;margin-bottom: 5px;min-width: 130px ">
+                <li style="padding-left: 5px; "><img src="images/talk.png "
+                                                     style="height: 35px;float: left;margin-right: 5px "><span
+                        style="color: #656565;line-height: 30px;font-size: 0.8rem;float: left; ">在线咨询</span>
+                </li>
+                <div class="devider "></div>
+                <li style="padding-left: 5px; "><img src="images/phone.png "
+                                                     style="height: 30px;margin-left: 3px;margin-right: 6px;float: left "><span
+                        style="color: #656565;line-height: 30px;font-size: 0.8rem;float: left; ">电话咨询</span><img
+                        src="images/from.png " style="position: absolute;top:96%;height: 15px;left: 10% ">
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+</body>
+
+</html>

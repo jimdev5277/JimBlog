@@ -1,0 +1,91 @@
+html {
+  font-size: 20px;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+body {
+  background-color: #E4E4E4;
+}
+.container-fluid {
+  padding: 0px;
+}
+.container-fluid .navbar-fixed-top {
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.container-fluid .navbar-fixed-top .navbar-header {
+  height: 50px;
+  width: 100%;
+  background-color: #ff0000;
+  /*返回按钮的css样式*/
+  /*文字标题*/
+}
+.container-fluid .navbar-fixed-top .navbar-header #btnback {
+  height: 30px;
+  width: 30px;
+  display: block;
+  position: relative;
+  margin: 10px 0px 10px 20px;
+  float: left;
+}
+.container-fluid .navbar-fixed-top .navbar-header .backico {
+  overflow: hidden;
+  width: 25px;
+}
+.container-fluid .navbar-fixed-top .navbar-header .backico:before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  display: block;
+  border: 3px solid #ffffff;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+.container-fluid .navbar-fixed-top .navbar-header .title {
+  width: 100%;
+  height: 100%;
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  margin-left: -30px;
+}
+.container-fluid .navbar-fixed-top .navbar-header .mapz {
+  position: absolute;
+  right: 10px;
+  color: #fff;
+  top: 25%;
+  font-size: 18px;
+}
+.container-fluid .content {
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.container-fluid .zbmc {
+  margin-bottom: 0px;
+  padding-left: 0.825rem;
+  padding-right: 0.8rem;
+  height: 1.5rem;
+  font-size: 1rem;
+}
+.container-fluid .zbnr {
+  background-color: #fff;
+  margin-bottom: 0px;
+  padding-left: 0.825rem;
+  padding-right: 0.8rem;
+  font-size: 0.8rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  color: #666666;
+}

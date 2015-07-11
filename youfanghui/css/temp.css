@@ -1,0 +1,15 @@
+div {
+  line-height: 20px;
+  font-size: 0.375rem;
+  text-align: center;
+  position: relative;
+  position: absolute;
+}
+.xxx {
+  background-color: #fff;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  border-radius: 0.25rem;
+  vertical-align: middle;
+  display: inline-block;
+}

@@ -1,0 +1,136 @@
+@devidercolor: #D7D7D7;
+@ftitlecolor: #636363;
+@navbarheight: 50px;
+@filterheight: 30px;
+@contentmargin: 5px;
+@buttombarheight: 50px;
+@darktextcolor: #656565;
+@simpletextcolor: #787878;
+@commentcolor: #3A3A3A;
+@lighttextcolor: #000000;
+html {
+  font-size: 20px;
+}
+
+body {
+  background-color: #E6E6E6;
+}
+//内容块
+.content {
+  margin-top: @navbarheight+@filterheight+@contentmargin;
+  margin-bottom: @buttombarheight;
+}
+/*导航栏*/
+.navbar-header {
+  height: @navbarheight;
+  width: 100%;
+  background-color: white;
+}
+
+#btnback {
+  height: 30px;
+  width: 30px;
+  display: block;
+  position: relative;
+  margin: 10px 0px 10px 20px;
+  float: left;
+}
+
+/*返回按钮的css样式*/
+.backico {
+  overflow: hidden;
+  width: 25px;
+}
+
+.backico:before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  display: block;
+  border: 3px solid #999999;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+/*文字标题*/
+.title {
+  width: 100%;
+  height: 100%;
+  font-size: 1.25rem;
+  color: #000000;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  //  background-color: #b3d4fc;
+  margin-left: -30px;
+}
+
+/*分割线的样式*/
+.basedevider(@color:@devidercolor) {
+  width: 100%;
+  height: 1px;
+  background-color: @color;
+}
+
+.devider {
+  .basedevider();
+  clear: both;
+}
+
+.reddevider {
+  .basedevider(#DE898D);
+  padding: 0px 5px;
+}
+
+.basevdevider(@height:70%) {
+  width: 1px;
+  height: @height;
+  background-color: #B5B5B5;
+  display: inline;
+  float: left;
+}
+
+/*垂直分割线*/
+.vdevider {
+  .basevdevider();
+  margin: 5px 0px 5px -1px;
+}
+
+.vbdevider {
+  .basevdevider(100%);
+}
+
+/*筛选条件栏*/
+.navbar-filter {
+  height: @filterheight;
+  width: 100%;
+  //  background-color: salmon;
+  background-color: #ffffff;
+  clear: both;
+}
+
+/*筛选标题的字*/
+.filter-title {
+  height: @filterheight;
+  width: 33.3%;
+  float: left;
+  padding-left: 1px;
+}
+
+.filter-title span {
+  line-height: 30px;
+  color: @ftitlecolor;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+
+}

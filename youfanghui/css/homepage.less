@@ -1,0 +1,269 @@
+html {
+    font-size: 20px;
+    max-width: 414px;
+    min-width: 320px;
+    margin: 0 auto;
+    body {
+        background-color: #E6E6E6;
+        .navbar-fixed-top {
+            max-width: 414px;
+            min-width: 320px;
+            margin: 0 auto;
+        }
+        .navbar-fixed-bottom {
+            max-width: 414px;
+            min-width: 320px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 22px !important;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 23px !important;
+    }
+}
+
+@media only screen and (min-width: 384px) {
+    html {
+        font-size: 24px !important;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    html {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 26px !important;
+    }
+}
+/*placeholder的颜色修改*/
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    
+    color: #FFF2E3;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    
+    color: #FFF2E3;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    
+    color: #FFF2E3;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    
+    color: #FFF2E3;
+}
+/*输入框的样式*/
+
+.search {
+    height: 34px;
+    width: 70%;
+    background-color: transparent;
+    display: block;
+    margin: 8px 10px 8px 50px;
+    float: left;
+    border: 1px solid #FFF2E3;
+    border-radius: 20px;
+    line-height: 30px;
+    color: #FFF2E3;
+    font-size: 1.2em;
+    padding-left: 80px;
+    outline: none;
+}
+/*分割线的样式*/
+
+.devider {
+    width: 100%;
+    height: 1px;
+    background-color: #DADADA;
+}
+/*垂直分割线*/
+
+.vdevider {
+    width: 1px;
+    height: 90%;
+    background-color: #B3B3B3;
+    float: left;
+}
+/*底部垂直分割线*/
+
+.bvdevider {
+    width: 1px;
+    height: 70%;
+    background-color: #B3B3B3;
+    float: left;
+    position: relative;
+    top: 0.35rem;
+}
+/*返回标题栏*/
+
+.navbar-header {
+    height: 50px;
+    width: 100%;
+    background-color: #DD3300;
+    position: relative;
+}
+
+.content {
+    margin-top: 50px;
+    padding-bottom: 2.45rem;
+}
+
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+}
+
+.col-xs-3 {
+    padding-left: 0px;
+    padding-right: 0px;
+    img {
+        height: 1.8rem;
+    }
+    p {
+        margin-top: -0.75rem;
+        font-size: 0.6rem;
+        margin-left: 0.25rem;
+        color: #656565;
+    }
+}
+
+.titlep(@color: red) {
+    background-color: #E6E6E6;
+    height: 1.25rem;
+    font-size: 0.75rem;
+    padding-top: 0.33rem;
+    padding-left: 0.83rem;
+    color: @color;
+    margin-bottom: 0px
+}
+
+.titlepb {
+    .titlep(blue);
+    margin-top: -0.2rem;
+    padding-bottom: 1.25rem;
+}
+
+.titlepr {
+    .titlep();
+}
+
+.titlepink {
+    .titlep(#FF00F6);
+    margin-top: -0.2rem;
+    padding-bottom: 1.25rem;
+}
+
+.titledl {
+    .titlep(#00DDFC);
+    margin-top: -0.2rem;
+    padding-bottom: 1.25rem;
+}
+
+.titlejs {
+    .titlep(#FF2B00);
+    margin-top: -0.2rem;
+    padding-bottom: 1.25rem;
+}
+
+.titlezs {
+    .titlep(#5200A0);
+    margin-top: -0.2rem;
+    padding-bottom: 1.25rem;
+}
+
+.titleqs {
+    .titlep(#009900);
+    margin-top: -0.2rem;
+    padding-bottom: 1.25rem;
+}
+
+.titlesl {
+    .titlep(#2A00BD);
+    margin-top: -0.2rem;
+    padding-bottom: 1.25rem;
+}
+
+#jingpingt > div {
+    float: left;
+    width: 20%;
+    font-size: 0.75rem;
+    text-align: center;
+    padding-top: 0.25rem;
+    margin-right: -1px;
+}
+
+.bottomico {
+    height: 1.3rem;
+    text-align: center;
+    position: absolute;
+    left: 38%;
+    top: 10%;
+}
+
+.bottomp {
+    position: absolute;
+    left: 36%;
+    top: 1.5rem;
+    font-size: 0.6rem;
+    color: #909090;
+}
+
+.bottompa {
+    position: absolute;
+    left: 39%;
+    top: 1.5rem;
+    font-size: 0.6rem;
+    color: #EE0000;
+}
+
+.bottomp2 {
+    position: absolute;
+    left: 33.5%;
+    top: 1.5rem;
+    font-size: 0.6rem;
+    color: #909090;
+}
+
+.bottompa2 {
+    position: absolute;
+    left: 39%;
+    top: 1.5rem;
+    font-size: 0.6rem;
+    color: #EE0000;
+}
+
+.bottomp3 {
+    position: absolute;
+    left: 31%;
+    top: 1.5rem;
+    font-size: 0.6rem;
+    color: #909090;
+}
+
+.bottompa3 {
+    position: absolute;
+    left: 39%;
+    top: 1.5rem;
+    font-size: 0.6rem;
+    color: #EE0000;
+}
