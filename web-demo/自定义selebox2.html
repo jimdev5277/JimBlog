@@ -1,0 +1,252 @@
+<html>
+<head>
+    <style></style>
+</head>
+<body>
+
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/base/reset.css "/>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    select.multiseriate {
+        display: none;
+        height: 30px;
+        overflow: hidden;
+        border: 1px solid #e2e2e2;
+    }
+
+    .select_box {
+        color: #8c8c8c;;
+        width: 400px;
+        line-height: 30px;
+        margin-top: 48px;
+        float: left;
+        height: 30px;
+        margin-left: 100px;
+        position: relative;
+    }
+
+    .select_showbox {
+        border: 1px solid #e2e2e2;
+        height: 30px;
+        padding-left: 5px;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA7RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjNCNDNBRTM3QjZGRUU0MTFCMDdFQTYwMUJCQ0U3NzA0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIxNDkwQzZBMThBMjExRTVCMDVDRkZENTE1NjVFNjYzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIxNDkwQzY5MThBMjExRTVCMDVDRkZENTE1NjVFNjYzIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDI5MEE1RkZBMTE4RTUxMTlBQ0JCNTA0Q0VEMzI1RjUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6M0I0M0FFMzdCNkZFRTQxMUIwN0VBNjAxQkJDRTc3MDQiLz4gPGRjOnRpdGxlPiA8cmRmOkFsdC8+IDwvZGM6dGl0bGU+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+wudBHwAAAGNJREFUeNpitHP12cLAwODNgB2UMgGJRCB+jUXyKRDPYDq4azNIMhZN8hoQewDlvoBMYAAydoJUQyU/AvF8IL4K4jAh6SoB4jtAfBSIFwA1/QeL/v//H46BDlYHYjdkMYAAAwD+qiyL8iio+wAAAABJRU5ErkJggg==") no-repeat 98% 10px;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+        -o-text-overflow:ellipsis;
+        overflow: hidden;
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    .select_option {
+        border: 1px solid #e2e2e2;
+        /*border-top: none;*/
+        display: none;
+        position: absolute;
+        top: 32px;
+        left: 0;
+        /*width: 600px;*/
+        /*height: 170px;*/
+        background-color: #fff;
+        overflow: auto;
+    }
+    .select_option td{
+        color: #8c8c8c;
+        /*padding-top: 6px;*/
+        font-size: 14px;
+        text-align: left;
+    }
+    .select_option td.assay{
+        width: 480px;
+    }
+    .select_option td.unit{
+        width: 70px;
+    }
+    .select_option td.temp{
+        width: 50px;
+    }
+    .select_option li {
+        background: #fff;
+        /*height: 30px;*/
+        line-height: 30px;
+        list-style: none;
+        padding-left:10px;
+        padding: 5px 0 5px 10px;
+    }
+    .select_option li.tip {
+        background-color: #f1f1f1;
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    .select_option li.selected {
+        background-color: #E6EFE9;
+        color: #000;
+    }
+
+    .select_option li.hover {
+        background: #E6EFE9;
+        color: #fff;
+    }
+</style>
+
+
+<form action="" method="post" id="formid" name="form1">
+    <div>
+        <!--<div class="select_box">-->
+            <!--<div class="select_showbox" style="cursor: pointer;">01</div>-->
+            <!--<ul class="select_option" style="display: none;">-->
+                <!--<li class="" style="cursor: pointer;">请选择</li>-->
+                <!--<li class="selected" style="cursor: pointer;">01</li>-->
+                <!--<li style="cursor: pointer;">02</li>-->
+                <!--<li style="cursor: pointer;">03</li>-->
+                <!--<li style="cursor: pointer;">04</li>-->
+                <!--<li style="cursor: pointer;">05</li>-->
+                <!--<li style="cursor: pointer;">06</li>-->
+                <!--<li style="cursor: pointer;">07</li>-->
+                <!--<li style="cursor: pointer;">08</li>-->
+                <!--<li style="cursor: pointer;">09</li>-->
+                <!--<li style="cursor: pointer;">10</li>-->
+                <!--<li style="cursor: pointer;">11</li>-->
+                <!--<li style="cursor: pointer;">12</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <select name="choose" id="choose" class="multiseriate">
+            <option value="" selected="selected">请选择</option>
+            <option value="01">
+                Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng1&;g/dl&;11
+            </option>
+            <option value="02">Albumin (Clin Chem),Bromocresol2&;g/dl&;0</option>
+            <option value="03">Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng1&;g/dl&;11</option>
+            <option value="04">Albumin (Clin Chem),Bromocresol2&;g/dl&;0</option>
+            <option value="05">
+                Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng1&;g/dl&;11
+            </option>
+            <option value="06">Albumin (Clin Chem),Bromocresol2&;g/dl&;0</option>
+            <option value="07">Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng1&;g/dl&;11</option>
+            <option value="08">Albumin (Clin Chem),Bromocresol2&;g/dl&;0</option>
+            <option value="09">
+                Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng1&;g/dl&;11
+            </option>
+            <option value="10">Albumin (Clin Chem),Bromocresol2&;g/dl&;0</option>
+            <option value="11">Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng1&;g/dl&;11</option>
+            <option value="12">Albumin (Clin Chem),Bromocresol2&;g/dl&;0</option>
+        </select><br>
+    </div>
+    <input id="multiseriate-style" name="style" value="" type="hidden">
+    <input   type="button" id="multiseriate-submit" value="test">
+</form>
+<script type="text/javascript" src="http://cdn.gbtags.com/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+    (function ($) {
+       var selects= $.fn.selects = $('select.multiseriate');//获取select
+        for (var i = 0; i < selects.length; i++) {
+            createSelect(selects[i], i);
+        }
+        function createSelect(select_container, index) {
+
+
+            //创建select容器，class为select_box，插入到select标签前
+            var tag_select = $('<div></div>');//div相当于select标签
+            tag_select.attr('class', 'select_box');
+            if (i == 1) {
+                tag_select.css("z-index", "2000");
+            }
+            tag_select.insertBefore(select_container);
+
+
+            //显示框class为select_showbox,插入到创建的tag_select中
+            var select_showbox = $('<div></div>');//显示框
+            select_showbox.css('cursor', 'pointer').attr('class', 'select_showbox').appendTo(tag_select);
+
+
+            //创建option容器，class为select_option，插入到创建的tag_select中
+            var ul_option = $('<ul></ul>');//创建option列表
+            ul_option.attr('class', 'select_option');
+            ul_option.appendTo(tag_select);
+            createOptions(index, ul_option);//创建option
+
+
+            //点击显示框
+            tag_select.toggle(function () {
+                ul_option.show();
+            }, function () {
+                ul_option.hide();
+            });
+
+            tag_select.hover(function () {
+            }, function () {
+                ul_option.hide();
+            });
+
+            var li_option = ul_option.find('li').not('.tip');
+            li_option.on('click', function () {
+                $(this).addClass('selected').siblings().removeClass('selected');
+                var value = $(this).find(".assay").text();
+                select_showbox.text(value);
+                ul_option.hide();
+            });
+
+
+            li_option.hover(function () {
+                $(this).addClass('hover').siblings().removeClass('hover');
+            }, function () {
+                li_option.removeClass('hover');
+            });
+
+
+        }
+
+        function createOptions(index, ul_list) {
+            //获取被选中的元素并将其值赋值到显示框中
+            var options = selects.eq(index).find('option'),
+                    selected_option = options.filter(':selected'),
+                    selected_index = selected_option.index(),
+                    showbox = ul_list.prev();
+            showbox.text(selected_option.text());
+           var tip_option = $('<li class="tip"><table style="width: 600px" cellspacing="2" cellpadding="0"><tbody><tr><td class="assay">Assay</td><td class="unit">Unit</td><td class="temp">Temp</td></tr></tbody></table></li>');
+            ul_list.append(tip_option);
+            //为每个option建立个li并赋值
+            for (var n = 0; n < options.length; n++) {
+                var tag_option = $('<li></li>'),//li相当于option
+                        txt_option = options.eq(n).text();
+                tag_option.append('<table style="width: 600px" cellspacing="2" cellpadding="0"><tbody><tr><td class="assay"></td><td class="unit"></td><td class="temp"></td></tr></tbody></table>');
+                var arr =txt_option.split('&;');
+                txt_option_assay=arr[0];
+                txt_option_unit=arr[1];
+                txt_option_temp=arr[2];
+                tag_option.find(".assay").text(txt_option_assay);
+                tag_option.find(".unit").text(txt_option_unit);
+                tag_option.find(".temp").text(txt_option_temp);
+                tag_option.css('cursor', 'pointer').appendTo(ul_list);
+
+
+                //为被选中的元素添加class为selected
+                if (n == selected_index) {
+                    tag_option.attr('class', 'selected');
+                }
+            }
+        }
+        //给自定义一个隐藏域的input赋值获得的自定义的selectbox的值提交到表单中
+        $.fn.selects.submitVal = function(eleid){
+            var ele = $("#"+eleid);
+            var hiddenval =$('.select_showbox').text();
+            ele.val(hiddenval);
+        }
+    })(jQuery)
+</script>
+<script>
+    //测试提交表单
+    $(function(){
+        $('#multiseriate-submit').on('click',function(){
+            $.fn.selects.submitVal('multiseriate-style');
+            alert($('#multiseriate-style').val());
+        });
+    });
+</script>
+</body>
+</html>
