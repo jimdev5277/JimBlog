@@ -151,7 +151,7 @@
 
 
             //创建select容器，class为select_box，插入到select标签前
-            var tag_select = $('<div></div>');//div相当于select标签
+            var tag_select = $('<div class="multiseriate"></div>');//div相当于select标签
             tag_select.attr('class', 'select_box');
             if (i == 1) {
                 tag_select.css("z-index", "2000");
@@ -160,7 +160,7 @@
 
 
             //显示框class为select_showbox,插入到创建的tag_select中
-            var select_showbox = $('<div class="multiseriate"></div>');//显示框
+            var select_showbox = $('<div></div>');//显示框
             select_showbox.css('cursor', 'pointer').attr('class', 'select_showbox').appendTo(tag_select);
 
 
