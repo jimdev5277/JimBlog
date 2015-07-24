@@ -95,7 +95,7 @@
             <!--</ul>-->
         <!--</div>-->
         <select name="choose" id="choose">
-            <option value="" selected="selected">请选择</option>
+            <option value="00" selected="selected">请选择</option>
             <option value="01">
                 Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng
             </option>
@@ -199,13 +199,21 @@
                 }
             }
         }
-
+     function select_option(){
+        $('.select_box .select_option li').on('click',function(){
+            var index = $(this).index();
+            var _select = $(this).parent().parent().next('select');
+            var value = _select.find('option').eq(index).attr('value');
+            _select.val(value);
+        });
+     }
+     select_option();
     })(jQuery)
 </script>
 
 
-<script type="text/javascript">
-    $('#choose').val('02');
-</script>
+ <!--<script type="text/javascript">-->
+     <!--$('#choose').val('02');-->
+ <!--</script>-->
 </body>
 </html>
