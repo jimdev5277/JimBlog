@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>radio自定义样式</title>
+	<style>
+      .RadioLabelClass:hover{
+      text-decoration: underline;
+       }
+       .RadioLabelClass{
+        background: url("img/r-noselect.png") no-repeat;
+        padding-left: 30px;
+        padding-top: 3px;
+        margin: 5px;
+        height: 28px;
+        width: 70px;
+        display: block;
+        float: left;
+           }
+       .RadioSelected{
+      background: url("img/r-select.png") no-repeat;
+       }
+	</style>
+</head>
+<body>
+	
+	<div>
+<input id="Radio1" type="radio" class="RadioClass" name="group1">
+<label id="Label1" for="Radio1" class="RadioLabelClass">单选框 1</label>
+<input id="Radio2" type="radio" class="RadioClass" name="group1">
+<label id="Label2" for="Radio2" class="RadioLabelClass">Radio 2</label>
+<input id="Radio3" type="radio" class="RadioClass" name="group1">
+<label id="Label3" for="Radio3" class="RadioLabelClass RadioSelected">Radio 3</label>
+</div>
+<script src="js/jquery.js"></script>
+<script>
+	$("label.RadioLabelClass").on("click", function () {
+        if ($(this).prev("[type=radio]").is(":checked")) {
+            $(this).prev("[type=radio]").attr("checked", false);
+            // $(this).removeClass("RadioSelected");
+        } else {
+            $(this).prev("[type=radio]").prop("checked", true);
+            $('label.RadioLabelClass').removeClass('RadioSelected');
+            $(this).addClass("RadioSelected");
+        }
+    });
+</script>
+</body>
+</html>
