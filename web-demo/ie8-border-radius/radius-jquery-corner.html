@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+
+	<style>
+		.yuan { 
+			border: 2px solid #C0C0C0; 
+			-moz-border-radius: 30px; 
+			-webkit-border-radius: 30px; 
+			border-radius: 30px; 
+			position:relative; 
+			padding:5px; 
+			background:red; 
+			z-index:2; 
+			width:330px; 
+			height:200px; 
+			} 
+			.yuan:hover {
+				background:yellow;
+			}
+	</style>
+</head>
+<body>
+<h1>使用jquery.corner.js插件兼容ie8圆角(效果比较差)</h1>
+<div class="yuan"> 
+	DIVCSS5圆角实例<br> 
+	CSS3版本圆角实例，<br> 
+	支持低版本IE6-IE9浏览器 
+</div>
+  <script src="jquery-1.2.6.pack.js"></script>
+  <script src='jquery.corner.js'></script>
+  <script>
+   $('.yuan').corner();
+  </script>
+</body>
+</html>
