@@ -16,21 +16,14 @@
 			z-index:2; 
 			width:330px; 
 			height:200px; 
-			 behavior:url(PIE.htc);
 			} 
 			.yuan:hover {
 				background:yellow;
 			}
-			.yuan.active{
-				background:pink;
-			}
-			.yuan.active:hover {
-				background:brown;
-			}
 	</style>
 </head>
 <body>
-<h1>使用css3.pie兼容ie8圆角</h1>
+<h1>使用jquery.corner.js插件兼容ie8圆角(效果比较差)</h1>
 <div class="yuan"> 
 	DIVCSS5圆角实例<br> 
 	CSS3版本圆角实例，<br> 
@@ -41,9 +34,12 @@
 <button onclick="test3()">点击动态生成</button>
 <br />
 <br />
-<a href="PIE-1.0.0.zip">所需要的css3.pie文件下载</a>
-<script src="jquery.js"></script>
-<script>
+  <script src="../jquery.js"></script>
+  <script src='jquery.corner.js'></script>
+  <script>
+   $('.yuan').corner("10px");
+  </script>
+  <script>
 function test(){
 	$('.yuan').css('background','pink');
 }
@@ -57,6 +53,6 @@ function test3(){
 	'支持低版本IE6-IE9浏览器 ' +
 '</div>')
 }
-</script>
+  </script>
 </body>
 </html>
