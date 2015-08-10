@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://www.jqcool.net/perfect-scrollbar.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=10,IE=9,IE=8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="shortcut icon" href="http://www.jqcool.net/wp-content/themes/D8_3.0/img/favicon.ico" type="image/x-icon">
+<title>jquery完美的自定义风格滚动条插件perfect-scrollbar - jQ酷</title>
+
+<script async="" src="./perfect-scrollbar_files/analytics.js"></script><script>
+
+window._deel = {
+
+    name: 'jQ酷',
+
+    url: 'http://www.jqcool.net/wp-content/themes/D8_3.0',
+
+    rss: 'www.jqcool.net/feed/',
+
+    ajaxpager: 'on',
+
+    maillist: '',
+
+    maillistCode: '',
+
+    commenton: 1,
+
+    roll: [1,2]
+
+}
+
+</script>
+
+
+<!-- All in One SEO Pack 2.2.6.2 by Michael Torbert of Semper Fi Web Design[365,420] -->
+<meta name="description" itemprop="description" content="Perfect Scrollbar 是一个轻量级的（~14KB）的 jQuery 插件，能够帮助你轻松创建出自定义风格的滚动条。它不会影响默认的布局，也不需要任何任何的 CSS 修改，该插件适用于任何大小的容器，并重新安排位置，如果容器大小发生变化会自动调整位置。此外，滚动条的风格可以完全通过 CSS">
+
+<meta name="keywords" itemprop="keywords" content="jquery滚动条风格插件，滚动条风格插件perfect scrollbar,自定义滚动条插件perfect scrollbar">
+
+<link rel="canonical" href="./perfect-scrollbar_files/perfect-scrollbar.html">
+<!-- /all in one seo pack -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.jqcool.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f;c.supports={simple:d("simple"),flag:d("flag")},c.supports.simple&&c.supports.flag||(f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./perfect-scrollbar_files/wp-emoji-release.min.js" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="style-css" href="./perfect-scrollbar_files/style.css" type="text/css" media="all">
+<script type="text/javascript">
+var duoshuoQuery = {"short_name":"jqcools","sso":{"login":"http:\/\/www.jqcool.net\/wp-login.php?action=duoshuo_login","logout":"http:\/\/www.jqcool.net\/wp-login.php?action=logout&_wpnonce=d7c5f28295"},"theme":"default","stylePatch":"wordpress\/"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);
+</script>
+<script type="text/javascript" src="./perfect-scrollbar_files/embed.js" charset="UTF-8" async="async"></script>
+<script type="text/javascript" src="./perfect-scrollbar_files/jquery.min.js"></script>
+<link rel="prev" title="FWA轮播图效果-透视内容幻灯片Tilted Items" href="http://www.jqcool.net/tilted-items.html">
+<link rel="next" title="你要想将来舒服，就得现在使劲儿难为自己" href="http://www.jqcool.net/nanweiziji.html">
+<link rel="shortlink" href="http://www.jqcool.net/?p=1853">
+<script type="text/javascript" src="./perfect-scrollbar_files/shCore.js"></script><link type="text/css" rel="stylesheet" href="./perfect-scrollbar_files/shCoreDefault.css">
+<!--[if lt IE 9]><script src="http://www.jqcool.net/wp-content/themes/D8_3.0/js/html5.js"></script><![endif]-->
+
+<link type="text/css" rel="stylesheet" href="./perfect-scrollbar_files/embed.default.css"><script></script><script></script><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+<body class="single single-post postid-1853 single-format-standard">
+
+<header class="header">
+
+	<div class="navbar">
+
+		<div class="logo"><a href="http://www.jqcool.net/" title="jQ酷-jquery教程_jquery ui_jquery表单_jquery插件">jQ酷</a></div>
+
+		<ul class="nav">
+
+			<li id="menu-item-1510" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-1510"><a href="http://www.jqcool.net/plug">jQuery插件</a></li>
+<li id="menu-item-1514" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1514"><a href="http://www.jqcool.net/jquery-course">jQuery教程</a></li>
+<li id="menu-item-1509" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1509"><a href="http://www.jqcool.net/adminnote">站长随记</a></li>
+<li id="menu-item-1934" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1934"><a href="http://www.jqcool.net/jquery-download">jquery下载</a></li>
+<li id="menu-item-2652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2652"><a href="http://www.jqcool.net/guestbook">留言</a></li>
+
+		</ul>
+
+		<div class="menu pull-right">
+
+			<form method="get" class="dropdown search-form" action="http://www.jqcool.net/">
+
+				<input class="search-input" name="s" type="text" placeholder="输入关键字搜索" autofocus="" x-webkit-speech=""><input class="btn btn-success search-submit" type="submit" value="搜索">
+
+				<ul class="dropdown-menu search-suggest"></ul>
+
+			</form>
+
+			<div class="btn-group pull-left">
+
+				<button class="btn btn-primary" data-toggle="modal" data-target="#feed">订阅</button>
+
+				
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">关注 <i class="caret"></i></button>
+
+				<ul class="dropdown-menu pull-right">
+
+					<li><a href="http://t.qq.com/rainrocstudio" target="_blank">腾讯微博</a></li>
+					<li><a href="http://weibo.com/jqcool" target="_blank">新浪微博</a></li>
+					
+					
+				</ul>
+
+				
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="speedbar">
+
+		
+			<div class="pull-right">
+
+				<i class="icon-user icon12"></i> <a href="http://www.jqcool.net/wp-login.php?action=register">注册</a> &nbsp; &nbsp;<a href="http://www.jqcool.net/wp-login.php">登录</a>
+			</div>
+
+		
+		<div class="toptip"><strong class="text-success">最新消息：</strong>自2014年9月3日起本站关闭评论功能，造成的不便敬请见谅！最新版<a href="http://www.jqcool.net/jquery/jqcool.net-jquery2.1.1.rar" target="_blank" rel="nofollow">jquery-2.1.1下载</a>&nbsp;&nbsp;，在线的
+<a href="http://www.jqcool.net/jqueryapi/index.htm" target="_blank" rel="nofollow">jquery API</a>使用手册，
+稳定版<a href="http://www.jqcool.net/jquery/jquery.mobile-1.3.2.zip" target="_blank" rel="nofollow">jquery.mobile-1.3.2下载</a></div>
+
+	</div>
+
+</header>
+
+<section class="container">
+
+	
+<div class="content-wrap">
+
+	<div class="content">
+
+		<div class="breadcrumbs">你的位置：<a href="http://www.jqcool.net/">jQ酷</a> <small>&gt;</small> <a href="http://www.jqcool.net/plug">jQuery插件</a> <small>&gt;</small> <a href="http://www.jqcool.net/plug/ui">UI</a> <small>&gt;</small> <span class="muted">jquery完美的自定义风格滚动条插件perfect-scrollbar</span></div>
+
+		
+		<header class="article-header">
+
+			<h1 class="article-title"><a href="./perfect-scrollbar_files/perfect-scrollbar.html">jquery完美的自定义风格滚动条插件perfect-scrollbar</a></h1>
+
+			<div class="meta">
+
+				<span class="muted"><a href="http://www.jqcool.net/plug/ui"><i class="icon-list-alt icon12"></i> UI</a></span>
+				<span class="muted"><i class="icon-user icon12"></i> <a href="http://www.jqcool.net/author/fishcity">fishcity</a></span>
+
+				<time class="muted"><i class="ico icon-time icon12"></i> 1年前 (2014-05-07)</time>
+
+				<span class="muted"><i class="ico icon-eye-open icon12"></i> 2161浏览</span>
+
+				
+
+        
+
+        
+				
+
+
+			</div>
+
+		</header>
+
+
+
+		
+		
+
+		<article class="article-content">
+
+			<p><img src="./perfect-scrollbar_files/2014-05-0794.jpg" title="滚动条插件perfect-scrollbar" data-pinit="registered" width="615" height="413" border="0" hspace="0" vspace="0" alt="滚动条插件perfect-scrollbar" style="width: 615px; height: 413px;"></p>
+<p>各个浏览器的滚动条风格不一，因此很多网站都会自定义滚动条的风格。自定义风格的滚动条在所有的浏览器上看起来是一样（例如：几乎所有的谷歌应用程序都是用的灰色细条滚动条）。</p>
+<p><strong>Perfect Scrollbar</strong>&nbsp;是一个轻量级的（~14KB）的&nbsp;<a href="http://www.jqcool.net/" target="_self">jQuery插件</a>，能够帮助你轻松创建出自定义风格的<a href="http://www.jqcool.net/jquery-jscrollpane.html" target="_self">滚动条</a>。它不会影响默认的布局，也不需要任何任何的&nbsp;CSS&nbsp;修改，该插件适用于任何大小的容器，并重新安排位置，如果容器大小发生变化会自动调整位置。此外，滚动条的风格可以完全通过&nbsp;CSS&nbsp;定制，另外还支持鼠标滚轮插件 –&nbsp;<a href="http://www.jqcool.net/jquery-mousewheel.html" target="_self" textvalue="jquery-mousewheel">jquery-mousewheel</a>。</p>
+<p><br></p>
+<p>使用方法：</p>
+<p><strong>引入核心文件</strong><br></p>
+<table border="0" cellpadding="0" cellspacing="0" class="syntaxhighlighter  html"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="html spaces">&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">link</code>&nbsp;<code class="html color1">href</code><code class="html plain">=</code><code class="html string">"src/perfect-scrollbar.css"</code>&nbsp;<code class="html color1">rel</code><code class="html plain">=</code><code class="html string">"stylesheet"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">script</code>&nbsp;<code class="html color1">src</code><code class="html plain">=</code><code class="html string">"http://ajax.useso.com/ajax/libs/jquery/1.10.2/jquery.min.js"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">script</code>&nbsp;<code class="html color1">src</code><code class="html plain">=</code><code class="html string">"src/jquery.mousewheel.js"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">script</code>&nbsp;<code class="html color1">src</code><code class="html plain">=</code><code class="html string">"src/perfect-scrollbar.js"</code><code class="html plain">&gt;&lt;/</code><code class="html keyword">script</code><code class="html plain">&gt;</code></div></div></td></tr></tbody></table>
+<p><strong>构建html</strong></p>
+<table border="0" cellpadding="0" cellspacing="0" class="syntaxhighlighter  html"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="html spaces">&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code>&nbsp;<code class="html color1">id</code><code class="html plain">=</code><code class="html string">"Default"</code>&nbsp;<code class="html color1">class</code><code class="html plain">=</code><code class="html string">"contentHolder"</code><code class="html plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;</code><code class="html keyword">div</code>&nbsp;<code class="html color1">class</code><code class="html plain">=</code><code class="html string">"content"</code><code class="html plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="html spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="html spaces">&nbsp;</code><code class="html plain">&lt;/</code><code class="html keyword">div</code><code class="html plain">&gt;</code></div></div></td></tr></tbody></table>
+<p><strong>写入js，初始化插件</strong></p>
+<table border="0" cellpadding="0" cellspacing="0" class="syntaxhighlighter  js"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;</code><code class="js plain">￥(</code><code class="js keyword">function</code>&nbsp;<code class="js plain">($)&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">$(</code><code class="js string">'#Default'</code><code class="js plain">).perfectScrollbar();</code></div><div class="line number3 index2 alt2"><code class="js spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="js plain">});</code></div></div></td></tr></tbody></table>
+<p>更多的参数设置请参考<a href="https://github.com/noraesae/perfect-scrollbar" target="_self">官方文档</a>。</p>
+<p>转载请注明：<a href="http://www.jqcool.net/">jQ酷</a> » <a href="./perfect-scrollbar_files/perfect-scrollbar.html">jquery完美的自定义风格滚动条插件perfect-scrollbar</a></p>
+      <div class="viewdemo"><a href="http://www.jqcool.net/demo/201405/perfect-scrollbar/" target="_blank" rel="nofollow">&nbsp;</a></div><div class="download"> 下载地址：<a href="http://www.jqcool.net/localdown/201405/jqcool.net-perfect-scrollbar-0.4.10.rar" target="_blank" rel="nofollow">本站下载</a> | <a href="http://url.cn/NSc6UU" target="_blank" rel="nofollow">百度云</a> | <a href="https://github.com/noraesae/perfect-scrollbar" target="_blank" rel="nofollow">官方下载</a></div>
+      
+
+		</article>
+
+
+
+		
+
+
+		<footer class="article-footer">
+
+			<div class="article-tags">继续浏览有关 <a href="http://www.jqcool.net/tag/jquery" rel="tag">jQuery</a> 的文章</div>
+			
+      <div class="downloadtext"> 
+
+       <strong>下载说明：</strong><br>
+
+      ☉如果您发现本文件已经失效不能下载，请联系站长修正！<br>
+
+      ☉如果您下载的文件出现解压不了或文件受损等情况，请选择其他下载点重新下载。<br>
+
+      ☉下载本站资源，如果服务器暂不能下载请过一段时间重试！<br>
+
+      ☉有小部分资源需要解压密码，请输入：jqcool.net。<br>
+
+      ☉本站提供的所有资源仅供学习研究与参考，请勿用于商业用途。
+
+      </div>
+
+		</footer>
+
+
+
+		<nav class="article-nav">
+
+			<span class="article-nav-prev">上一篇 <a href="http://www.jqcool.net/tilted-items.html" rel="prev">FWA轮播图效果-透视内容幻灯片Tilted Items</a></span>
+
+			<span class="article-nav-next"><a href="http://www.jqcool.net/nanweiziji.html" rel="next">你要想将来舒服，就得现在使劲儿难为自己</a> 下一篇</span>
+
+		</nav>
+
+
+
+		<div class="relates">
+
+			<h3>与本文相关的文章</h3>
+
+			<ul>
+<li><a href="http://www.jqcool.net/jquery-mislider.html">jQuery超酷响应式圆形图片轮播图插件miSlider</a></li><li><a href="http://www.jqcool.net/jquery-circlr.html">jQuery产品图片360度旋转Circlr</a></li><li><a href="http://www.jqcool.net/image-cropper.html">简单功能强大的jQuery图片剪裁插件Image Cropper</a></li><li><a href="http://www.jqcool.net/jquery-jqmeter.html">jQuery轻量级进度条插件jQMeter</a></li><li><a href="http://www.jqcool.net/timeline-portfolio.html">超炫的时间轴jquery插件Timeline Portfolio</a></li><li><a href="http://www.jqcool.net/fullpage.html">jquery适用于移动PC的整屏全屏滚动插件fullPage</a></li><li><a href="http://www.jqcool.net/nicescroll.html">一款非常类似IOS滚动的jquery插件Nicescroll 3</a></li><li><a href="http://www.jqcool.net/jquery-velocity.html">极棒的jquery动画切换引擎插件Velocity.js</a></li><li><a href="http://www.jqcool.net/smooth-touch-scroll.html">触屏循环平滑滚动插件jQuery Smooth Touch Scroll</a></li><li><a href="http://www.jqcool.net/jquery-touchswipe.html">jQuery手机全屏上下滑动滚屏插件touchSwipe</a></li><li><a href="http://www.jqcool.net/jquery-lightbox2.html">原版图片效果插件Jquery Lightbox2</a></li><li><a href="http://www.jqcool.net/jquery-mouse-tracker.html">跟随鼠标移动插件Jquery Mouse Tracker</a></li></ul>
+		</div>
+
+
+
+		
+
+
+
+
+
+		
+
+
+	</div>
+
+</div>
+
+<aside class="sidebar">	
+<div class="widget d_postlist"><h3 class="widget_tit">热门文章</h3><ul><li><a href="http://www.jqcool.net/jquery-flexnav.html"><span class="thumbnail"><img src="./perfect-scrollbar_files/2014-07-2850.png" alt="适用触屏的jquery响应式多级菜单插件FlexNav"></span><span class="text">适用触屏的jquery响应式多级菜单插件FlexNav</span><span class="muted">2014-07-28</span><span class="muted">5条评论</span></a></li>
+<li><a href="http://www.jqcool.net/yoho.html"><span class="thumbnail"><img src="./perfect-scrollbar_files/c5476d8c84e81f500a25537ecf5bedc01.jpg" alt="从YOHO！实践，来看媒体基因做电商的有为与难为"></span><span class="text">从YOHO！实践，来看媒体基因做电商的有为与难为</span><span class="muted">2014-02-25</span><span class="muted">暂无评论</span></a></li>
+<li><a href="http://www.jqcool.net/jquery-minicart.html"><span class="thumbnail"><img src="./perfect-scrollbar_files/2014-07-0539.png" alt="jquery超强定制购物车插件minicart"></span><span class="text">jquery超强定制购物车插件minicart</span><span class="muted">2014-07-05</span><span class="muted">暂无评论</span></a></li>
+<li><a href="http://www.jqcool.net/caroufredsel-round.html"><span class="thumbnail"><img src="./perfect-scrollbar_files/2014-02-1367.jpg" alt="基于jquery的非常漂亮的圆形幻灯片特效"></span><span class="text">基于jquery的非常漂亮的圆形幻灯片特效</span><span class="muted">2014-02-13</span><span class="muted">暂无评论</span></a></li>
+<li><a href="http://www.jqcool.net/jquery-cycle.html"><span class="thumbnail"><img src="./perfect-scrollbar_files/2014-01-20651.jpg" alt="方便实用的Jquery Cycle特效实例"></span><span class="text">方便实用的Jquery Cycle特效实例</span><span class="muted">2014-01-19</span><span class="muted">暂无评论</span></a></li>
+<li><a href="http://www.jqcool.net/jquery-highlightregex.html"><span class="thumbnail"><img src="./perfect-scrollbar_files/2014-06-2699.jpg" alt="jQuery动态正则高亮文本插件highlightRegex"></span><span class="text">jQuery动态正则高亮文本插件highlightRegex</span><span class="muted">2014-06-26</span><span class="muted">暂无评论</span></a></li>
+</ul></div>		<div class="widget widget_recent_entries">		<h3 class="widget_tit">近期文章</h3>		<ul>
+					<li>
+				<a href="http://www.jqcool.net/job.html">​急聘前端工程师、PHP工程师，月薪8千-1万，有意者请联系！</a>
+						</li>
+					<li>
+				<a href="http://www.jqcool.net/mybadday.html">一间无耻的公司-全球速购建材</a>
+						</li>
+					<li>
+				<a href="http://www.jqcool.net/jquery-mislider.html">jQuery超酷响应式圆形图片轮播图插件miSlider</a>
+						</li>
+					<li>
+				<a href="http://www.jqcool.net/jquery-circlr.html">jQuery产品图片360度旋转Circlr</a>
+						</li>
+					<li>
+				<a href="http://www.jqcool.net/image-cropper.html">简单功能强大的jQuery图片剪裁插件Image Cropper</a>
+						</li>
+				</ul>
+		</div><div class="widget widget_categories"><h3 class="widget_tit">分类目录</h3>		<ul>
+	<li class="cat-item cat-item-198"><a href="http://www.jqcool.net/plug/ajax">ajax</a>
+</li>
+	<li class="cat-item cat-item-201"><a href="http://www.jqcool.net/jquery-course/example">jquery实例</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.jqcool.net/plug">jQuery插件</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.jqcool.net/jquery-course">jQuery教程</a>
+</li>
+	<li class="cat-item cat-item-192"><a href="http://www.jqcool.net/plug/ui">UI</a>
+</li>
+	<li class="cat-item cat-item-195"><a href="http://www.jqcool.net/plug/animation">动画</a>
+</li>
+	<li class="cat-item cat-item-197"><a href="http://www.jqcool.net/plug/media">媒体</a>
+</li>
+	<li class="cat-item cat-item-40"><a href="http://www.jqcool.net/adminnote" title="一个网站，不留点站长的心声，自白在上面，显得非常的陌生，僵硬，所以本栏目就为大家一起来探讨生活，探讨技术，一起进步，一起快乐而存在，jQ酷因有你而精彩！">站长随记</a>
+</li>
+	<li class="cat-item cat-item-199"><a href="http://www.jqcool.net/plug/menu">菜单</a>
+</li>
+	<li class="cat-item cat-item-193"><a href="http://www.jqcool.net/plug/form">表单</a>
+</li>
+	<li class="cat-item cat-item-196"><a href="http://www.jqcool.net/plug/input">输入</a>
+</li>
+		</ul>
+</div><div class="widget d_tag"><h3 class="widget_tit">热门标签</h3><div class="d_tags"><a href="http://www.jqcool.net/tag/jquery">jQuery (307)</a><a href="http://www.jqcool.net/tag/%e5%b9%bb%e7%81%af%e7%89%87">幻灯片 (48)</a><a href="http://www.jqcool.net/tag/html5">html5 (42)</a><a href="http://www.jqcool.net/tag/css3">CSS3 (40)</a><a href="http://www.jqcool.net/tag/%e5%93%8d%e5%ba%94%e5%bc%8f">响应式 (37)</a><a href="http://www.jqcool.net/tag/%e7%84%a6%e7%82%b9%e5%9b%be">焦点图 (36)</a><a href="http://www.jqcool.net/tag/jquery%e7%94%bb%e5%bb%8a">jquery画廊 (18)</a><a href="http://www.jqcool.net/tag/%e8%8f%9c%e5%8d%95">菜单 (12)</a><a href="http://www.jqcool.net/tag/%e9%bc%a0%e6%a0%87%e6%bb%9a%e8%bd%ae">鼠标滚轮 (11)</a><a href="http://www.jqcool.net/tag/%e6%97%a5%e6%9c%9f%e6%97%b6%e9%97%b4">日期时间 (8)</a><a href="http://www.jqcool.net/tag/jquery-mobile">jquery mobile (7)</a><a href="http://www.jqcool.net/tag/%e5%9b%be%e7%89%87%e7%89%b9%e6%95%88">图片特效 (6)</a><a href="http://www.jqcool.net/tag/%e5%8a%a0%e8%bd%bd%e5%8a%a8%e7%94%bb">加载动画 (5)</a><a href="http://www.jqcool.net/tag/jquery%e8%8f%9c%e5%8d%95">jquery菜单 (5)</a><a href="http://www.jqcool.net/tag/%e6%8b%96%e6%8b%bd%e5%b8%83%e5%b1%80">拖拽布局 (5)</a><a href="http://www.jqcool.net/tag/%e7%80%91%e5%b8%83%e6%b5%81">瀑布流 (5)</a><a href="http://www.jqcool.net/tag/%e8%a1%a8%e5%8d%95%e7%be%8e%e5%8c%96">表单美化 (4)</a><a href="http://www.jqcool.net/tag/%e6%98%9f%e6%98%9f%e8%af%84%e5%88%86">星星评分 (4)</a><a href="http://www.jqcool.net/tag/bootstrap">bootstrap (4)</a><a href="http://www.jqcool.net/tag/jquery%e5%8a%a8%e7%94%bb">jquery动画 (4)</a><a href="http://www.jqcool.net/tag/jquery%e6%8b%96%e6%94%be">jquery拖放 (3)</a><a href="http://www.jqcool.net/tag/jquery%e7%9b%b8%e5%86%8c">jquery相册 (3)</a><a href="http://www.jqcool.net/tag/%e6%89%8b%e6%9c%ba%e6%bb%9a%e5%b1%8f">手机滚屏 (3)</a><a href="http://www.jqcool.net/tag/%e7%bb%9f%e8%ae%a1%e5%9b%be">统计图 (2)</a><a href="http://www.jqcool.net/tag/jquery%e6%a0%91">jquery树 (2)</a><a href="http://www.jqcool.net/tag/jquery%e6%97%a5%e5%8e%86">jquery日历 (2)</a><a href="http://www.jqcool.net/tag/jquery-tree">jquery tree (1)</a><a href="http://www.jqcool.net/tag/jq-mobile%e6%95%99%e7%a8%8b">jq mobile教程 (1)</a><a href="http://www.jqcool.net/tag/jqueyr%e5%88%86%e9%a1%b5">jqueyr分页 (1)</a><a href="http://www.jqcool.net/tag/jquery%e8%a7%86%e9%a2%91">jquery视频 (1)</a><a href="http://www.jqcool.net/tag/jquery%e8%a1%a8%e5%8d%95">jquery表单 (1)</a><a href="http://www.jqcool.net/tag/%e7%a7%bb%e5%8a%a8">移动 (1)</a><a href="http://www.jqcool.net/tag/%e5%bb%b6%e8%bf%9f%e5%8a%a0%e8%bd%bd">延迟加载 (1)</a><a href="http://www.jqcool.net/tag/jquery%e4%b8%8a%e4%bc%a0">jquery上传 (1)</a></div></div><div class="widget widget_archive"><h3 class="widget_tit">文章归档</h3>		<ul>
+	<li><a href="http://www.jqcool.net/2015/06">2015年六月</a></li>
+	<li><a href="http://www.jqcool.net/2015/05">2015年五月</a></li>
+	<li><a href="http://www.jqcool.net/2015/04">2015年四月</a></li>
+	<li><a href="http://www.jqcool.net/2015/03">2015年三月</a></li>
+	<li><a href="http://www.jqcool.net/2015/02">2015年二月</a></li>
+	<li><a href="http://www.jqcool.net/2015/01">2015年一月</a></li>
+	<li><a href="http://www.jqcool.net/2014/12">2014年十二月</a></li>
+	<li><a href="http://www.jqcool.net/2014/11">2014年十一月</a></li>
+	<li><a href="http://www.jqcool.net/2014/10">2014年十月</a></li>
+	<li><a href="http://www.jqcool.net/2014/09">2014年九月</a></li>
+	<li><a href="http://www.jqcool.net/2014/08">2014年八月</a></li>
+	<li><a href="http://www.jqcool.net/2014/07">2014年七月</a></li>
+	<li><a href="http://www.jqcool.net/2014/06">2014年六月</a></li>
+	<li><a href="http://www.jqcool.net/2014/05">2014年五月</a></li>
+	<li><a href="http://www.jqcool.net/2014/04">2014年四月</a></li>
+	<li><a href="http://www.jqcool.net/2014/03">2014年三月</a></li>
+	<li><a href="http://www.jqcool.net/2014/02">2014年二月</a></li>
+	<li><a href="http://www.jqcool.net/2014/01">2014年一月</a></li>
+		</ul>
+</div></aside><!--cos-html-cache-safe-tag--></section>
+
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <div class="copyright pull-left">
+
+            版权所有，保留一切权利！ © 2015 <a href="http://www.jqcool.net/">jQ酷</a> <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备14039174号</a>
+&nbsp; &nbsp; &nbsp; &nbsp; 
+本站关键字：<a href="http://www.jqcool.net/plug/ui">jquery ui</a> &nbsp; 
+<a href="http://www.jqcool.net/jquery-course">jquery教程</a> &nbsp; 
+<a href="http://www.jqcool.net/plug">jquery插件</a> &nbsp; 
+<a href="http://www.jqcool.net/plug/form">jquery表单</a> &nbsp; 
+<a href="http://www.jqcool.net/jquery-download">jquery下载</a>
+        </div>
+
+        <div class="trackcode pull-right">
+
+            <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F37d7c2a32cf6eaef7d4fe958463e7134' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./perfect-scrollbar_files/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=37d7c2a32cf6eaef7d4fe958463e7134" target="_blank"><img border="0" src="./perfect-scrollbar_files/21.gif" width="20" height="20"></a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+
+<script>(function (){
+			window.clean__ = 'true';
+		})();</script><script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>
