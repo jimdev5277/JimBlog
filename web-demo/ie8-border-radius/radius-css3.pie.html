@@ -16,6 +16,7 @@
 			z-index:2; 
 			width:330px; 
 			height:200px; 
+			margin-top: 10px;
 			 behavior:url(PIE.htc);
 			} 
 			.yuan:hover {
@@ -27,6 +28,28 @@
 			.yuan.active:hover {
 				background:brown;
 			}
+			.yuan2 { 
+			border: 2px solid #C0C0C0; 
+			-moz-border-radius: 10px; 
+			-webkit-border-radius: 10px; 
+			border-radius: 10px; 
+			position:relative; 
+			padding:5px; 
+			background:red; 
+			z-index:2; 
+			width:330px; 
+			height:200px; 
+			margin-top: 10px;
+			} 
+			.yuan2:hover {
+				background:yellow;
+			}
+			.yuan2.active{
+				background:pink;
+			}
+			.yuan2.active:hover {
+				background:brown;
+			}
 	</style>
 </head>
 <body>
@@ -36,19 +59,31 @@
 	CSS3版本圆角实例，<br> 
 	支持低版本IE6-IE9浏览器 
 </div>
+<br />
+<br />
+<br />
 <button onclick="test()">点击直接转化背景色</button>
 <button onclick="test2()">点击添加类转化背景色</button>
 <button onclick="test3()">点击动态生成</button>
 <br />
 <br />
+<button onclick="test4()">生成yuan2</button>
+<button onclick="test5()" title="在文件浏览状态下生效">测试用PIE.js生成yuan2类</button>
+<br />
+<br />
 <a href="PIE-1.0.0.zip">所需要的css3.pie文件下载</a>
 <script src="jquery.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="PIE.js"> </script>
+<![endif]--> 
 <script>
 function test(){
 	$('.yuan').css('background','pink');
+	$('.yuan2').css('background','pink');
 }
 function test2(){
 	$('.yuan').addClass('active');
+	$('.yuan2').addClass('active');
 }
 function test3(){
 	$('body').append('<div class="yuan">' +
@@ -57,6 +92,18 @@ function test3(){
 	'支持低版本IE6-IE9浏览器 ' +
 '</div>')
 }
+function test4(){
+	$('body').append('<div class="yuan2">' +
+	'DIVCSS5圆角实例<br>' +
+	'CSS3版本圆角实例，<br> ' +
+	'支持低版本IE6-IE9浏览器 ' +
+'</div>');
+};
+function test5(){
+	$('.yuan2').each(function() {  
+        PIE.attach(this);  
+    }); 
+};
 </script>
 </body>
 </html>
