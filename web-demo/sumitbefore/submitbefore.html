@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+	<form action="./ddd.html">
+		<input type="text" name="ttt" id="ddd">
+		<input type="submit">
+	</form>
+	<button onclick="test()">改变deta</button>
+	<script src='../base/jquery.js'></script>
+	<script>
+		var test_data = 0;
+
+		function test() {
+			test_data = 1;
+		}
+		$(function() {
+			/**方法比较啰嗦 已经注释**/
+			// $("form").submit(function() {
+			// 	form = $(this);
+			// 	$.post(
+			// 		window.location,
+			// 		function(data) {
+			// 			if (test_data != 1) {
+			// 				alert(test_data);
+			// 				alert("报错");
+			// 			} else {
+			// 				form.unbind('submit');
+			// 				form.submit();
+			// 				return true;
+			// 			}
+			// 		}
+			// 	);
+			// 	return false;
+			// });
+			alert("表单的个数"+$("form").length);
+			$("form").submit(function() {
+			   alert('绑定第一个事件');
+			});
+			$("form").submit(function() {
+				if (test_data == 1) {
+					alert('验证不通过不提交表单');
+					return false;
+				} else {
+					alert('验证通过提交表单');
+					return true;
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
