@@ -1,0 +1,243 @@
+<html>
+<head>
+    <style></style>
+</head>
+<body>
+
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/base/reset.css "/>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .multiseriate.select {
+        display: none;
+        height: 30px;
+        overflow: hidden;
+        border: 1px solid #e2e2e2;
+    }
+
+    .multiseriate.select_box {
+        color: #8c8c8c;
+        width: 400px;
+        line-height: 30px;
+        margin-top: 48px;
+        float: left;
+        height: 30px;
+        margin-left: 100px;
+        position: relative;
+    }
+
+    .multiseriate .select_showbox {
+        border: 1px solid #e2e2e2;
+        height: 30px;
+        padding-left: 5px;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA7RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjNCNDNBRTM3QjZGRUU0MTFCMDdFQTYwMUJCQ0U3NzA0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIxNDkwQzZBMThBMjExRTVCMDVDRkZENTE1NjVFNjYzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIxNDkwQzY5MThBMjExRTVCMDVDRkZENTE1NjVFNjYzIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDI5MEE1RkZBMTE4RTUxMTlBQ0JCNTA0Q0VEMzI1RjUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6M0I0M0FFMzdCNkZFRTQxMUIwN0VBNjAxQkJDRTc3MDQiLz4gPGRjOnRpdGxlPiA8cmRmOkFsdC8+IDwvZGM6dGl0bGU+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+wudBHwAAAGNJREFUeNpitHP12cLAwODNgB2UMgGJRCB+jUXyKRDPYDq4azNIMhZN8hoQewDlvoBMYAAydoJUQyU/AvF8IL4K4jAh6SoB4jtAfBSIFwA1/QeL/v//H46BDlYHYjdkMYAAAwD+qiyL8iio+wAAAABJRU5ErkJggg==") no-repeat 98% 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 14px;
+        padding-right: 10px;
+    }
+
+    .multiseriate .select_option {
+        border: 1px solid #e2e2e2;
+        /*border-top: none;*/
+        display: none;
+        position: absolute;
+        top: 32px;
+        left: 0;
+        /*width: 600px;*/
+        /*height: 170px;*/
+        background-color: #fff;
+        overflow: auto;
+    }
+
+    .multiseriate .select_option td {
+        color: #8c8c8c;
+        /*padding-top: 6px;*/
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .multiseriate .select_option td.assay {
+        width: 480px;
+    }
+
+    .multiseriate .select_option td.unit {
+        width: 70px;
+    }
+
+    .multiseriate .select_option td.temp {
+        width: 50px;
+    }
+
+    .multiseriate .select_option li {
+        background: #fff;
+        /*height: 30px;*/
+        line-height: 30px;
+        list-style: none;
+        padding-left: 10px;
+        padding: 5px 0 5px 10px;
+    }
+
+    .multiseriate .select_option li.tip {
+        background-color: #f1f1f1;
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    .multiseriate .select_option li.selected {
+        background-color: #E6EFE9;
+        color: #000;
+    }
+
+    .multiseriate .select_option li.hover {
+        background: #E6EFE9;
+        color: #fff;
+    }
+
+    /*//多列下拉列表less样式*/
+    /*.multiseriate {*/
+    /*&.select {*/
+    /*display: none;*/
+    /*height: 30px;*/
+    /*overflow: hidden;*/
+    /*border: 1px solid #e2e2e2;*/
+    /*}*/
+    /*&.select_box {*/
+    /*color: #8c8c8c;;*/
+    /*width: 400px;*/
+    /*line-height: 30px;*/
+    /*margin-top: 48px;*/
+    /*float: left;*/
+    /*height: 30px;*/
+    /*margin-left: 100px;*/
+    /*position: relative;*/
+    /*}*/
+
+    /*.select_showbox {*/
+    /*border: 1px solid #e2e2e2;*/
+    /*height: 30px;*/
+    /*padding-left: 5px;*/
+    /*background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAYAAAD+Bd/7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA7RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjNCNDNBRTM3QjZGRUU0MTFCMDdFQTYwMUJCQ0U3NzA0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIxNDkwQzZBMThBMjExRTVCMDVDRkZENTE1NjVFNjYzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIxNDkwQzY5MThBMjExRTVCMDVDRkZENTE1NjVFNjYzIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDI5MEE1RkZBMTE4RTUxMTlBQ0JCNTA0Q0VEMzI1RjUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6M0I0M0FFMzdCNkZFRTQxMUIwN0VBNjAxQkJDRTc3MDQiLz4gPGRjOnRpdGxlPiA8cmRmOkFsdC8+IDwvZGM6dGl0bGU+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+wudBHwAAAGNJREFUeNpitHP12cLAwODNgB2UMgGJRCB+jUXyKRDPYDq4azNIMhZN8hoQewDlvoBMYAAydoJUQyU/AvF8IL4K4jAh6SoB4jtAfBSIFwA1/QeL/v//H46BDlYHYjdkMYAAAwD+qiyL8iio+wAAAABJRU5ErkJggg==") no-repeat 98% 10px;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
+    /*-o-text-overflow: ellipsis;*/
+    /*overflow: hidden;*/
+    /*font-size: 14px;*/
+    /*padding-right: 10px;*/
+    /*}*/
+
+    /*.select_option {*/
+    /*border: 1px solid #e2e2e2;*/
+    /*/!*border-top: none;*!/*/
+    /*display: none;*/
+    /*position: absolute;*/
+    /*top: 32px;*/
+    /*left: 0;*/
+    /*/!*width: 600px;*!/*/
+    /*/!*height: 170px;*!/*/
+    /*background-color: #fff;*/
+    /*overflow: auto;*/
+    /*td {*/
+    /*color: #8c8c8c;*/
+    /*/!*padding-top: 6px;*!/*/
+    /*font-size: 14px;*/
+    /*text-align: left;*/
+    /*&.assay {*/
+    /*width: 480px;*/
+    /*}*/
+    /*&.unit {*/
+    /*width: 70px;*/
+    /*}*/
+    /*&.temp {*/
+    /*width: 50px;*/
+    /*}*/
+    /*}*/
+    /*li {*/
+    /*background: #fff;*/
+    /*/!*height: 30px;*!/*/
+    /*line-height: 30px;*/
+    /*list-style: none;*/
+    /*padding-left: 10px;*/
+    /*padding: 5px 0 5px 10px;*/
+    /*&.tip {*/
+    /*background-color: #f1f1f1;*/
+    /*border-bottom: 1px solid #e2e2e2;*/
+    /*}*/
+    /*&.selected {*/
+    /*background-color: #E6EFE9;*/
+    /*color: #000;*/
+    /*}*/
+    /*&.hover {*/
+    /*background: #E6EFE9;*/
+    /*color: #fff;*/
+    /*}*/
+    /*}*/
+    /*}*/
+    /*}*/
+</style>
+
+
+<form action="" method="post" id="formid" name="form1">
+    <div>
+        <!--<div class="select_box">-->
+        <!--<div class="select_showbox" style="cursor: pointer;">01</div>-->
+        <!--<ul class="select_option" style="display: none;">-->
+        <!--<li class="" style="cursor: pointer;">请选择</li>-->
+        <!--<li class="selected" style="cursor: pointer;">01</li>-->
+        <!--<li style="cursor: pointer;">02</li>-->
+        <!--<li style="cursor: pointer;">03</li>-->
+        <!--<li style="cursor: pointer;">04</li>-->
+        <!--<li style="cursor: pointer;">05</li>-->
+        <!--<li style="cursor: pointer;">06</li>-->
+        <!--<li style="cursor: pointer;">07</li>-->
+        <!--<li style="cursor: pointer;">08</li>-->
+        <!--<li style="cursor: pointer;">09</li>-->
+        <!--<li style="cursor: pointer;">10</li>-->
+        <!--<li style="cursor: pointer;">11</li>-->
+        <!--<li style="cursor: pointer;">12</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <select name="choose" id="choose" class="multiseriate select">
+            <option value="" selected="selected">请选择</option>
+            <option value="01">
+                Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng1&;g/dl&;11
+            </option>
+            <option value="02">Albumin (Clin Chem),Bromocresol2&;g/dl&;0</option>
+            <option value="03">Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng1&;g/dl&;11</option>
+            <option value="04">Albumin (Clin Chem),Bromocresol2&;g/dl&;0</option>
+            <option value="05">
+                Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng1&;g/dl&;11
+            </option>
+            <option value="06">Albumin (Clin Chem),Bromocresol2&;g/dl&;0</option>
+            <option value="07">Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng1&;g/dl&;11</option>
+            <option value="08">Albumin (Clin Chem),Bromocresol2&;g/dl&;0</option>
+            <option value="09">
+                Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng1&;g/dl&;11
+            </option>
+            <option value="10">Albumin (Clin Chem),Bromocresol2&;g/dl&;0</option>
+            <option value="11">Albumin (Clin Chem),Bromocresol Green,Olympus AU2700,Zhicheng1&;g/dl&;11</option>
+            <option value="12">Albumin (Clin Chem),Bromocresol2&;g/dl&;0</option>
+        </select><br>
+    </div>
+    <input id="multiseriate-style" name="style" value="" type="hidden">
+    <input type="button" id="multiseriate-submit" value="test">
+</form>
+<script type="text/javascript" src="http://cdn.gbtags.com/jquery/1.8.2/jquery.min.js"></script>
+<script src="base/jquery.multiseriate.js"></script>
+<script>
+    //测试提交表单
+    $(function () {
+        $('#multiseriate-submit').on('click', function () {
+            $.fn.selects.submitVal('multiseriate-style');
+            alert($('#multiseriate-style').val());
+        });
+    });
+</script>
+</body>
+</html>
